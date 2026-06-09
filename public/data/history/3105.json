@@ -1,0 +1,421 @@
+{
+  "code": "3105",
+  "name": "穩懋",
+  "market": "TPEx",
+  "points": [
+    {
+      "date": "2026-04-01",
+      "open": 375,
+      "high": 385,
+      "low": 370,
+      "close": 376.5,
+      "volume": 49497000,
+      "change_pct": null
+    },
+    {
+      "date": "2026-04-02",
+      "open": 384,
+      "high": 404,
+      "low": 374,
+      "close": 376,
+      "volume": 59230000,
+      "change_pct": -0.13
+    },
+    {
+      "date": "2026-04-07",
+      "open": 396.5,
+      "high": 413,
+      "low": 391,
+      "close": 407,
+      "volume": 37458000,
+      "change_pct": 8.24
+    },
+    {
+      "date": "2026-04-08",
+      "open": 430.5,
+      "high": 445,
+      "low": 424.5,
+      "close": 440,
+      "volume": 40094000,
+      "change_pct": 8.11
+    },
+    {
+      "date": "2026-04-09",
+      "open": 443.5,
+      "high": 453.5,
+      "low": 431.5,
+      "close": 436,
+      "volume": 33459000,
+      "change_pct": -0.91
+    },
+    {
+      "date": "2026-04-10",
+      "open": 447,
+      "high": 474,
+      "low": 434,
+      "close": 464,
+      "volume": 48046000,
+      "change_pct": 6.42
+    },
+    {
+      "date": "2026-04-13",
+      "open": 466,
+      "high": 481,
+      "low": 458,
+      "close": 458,
+      "volume": 34579000,
+      "change_pct": -1.29
+    },
+    {
+      "date": "2026-04-14",
+      "open": 468,
+      "high": 472,
+      "low": 437,
+      "close": 457,
+      "volume": 34743000,
+      "change_pct": -0.22
+    },
+    {
+      "date": "2026-04-15",
+      "open": 459,
+      "high": 472,
+      "low": 444,
+      "close": 446.5,
+      "volume": 31849000,
+      "change_pct": -2.3
+    },
+    {
+      "date": "2026-04-16",
+      "open": 448,
+      "high": 491,
+      "low": 447.5,
+      "close": 490.5,
+      "volume": 51230000,
+      "change_pct": 9.85
+    },
+    {
+      "date": "2026-04-17",
+      "open": 511,
+      "high": 539,
+      "low": 503,
+      "close": 539,
+      "volume": 29148000,
+      "change_pct": 9.89
+    },
+    {
+      "date": "2026-04-20",
+      "open": 546,
+      "high": 592,
+      "low": 539,
+      "close": 592,
+      "volume": 42870000,
+      "change_pct": 9.83
+    },
+    {
+      "date": "2026-04-21",
+      "open": 625,
+      "high": 637,
+      "low": 585,
+      "close": 617,
+      "volume": 54738000,
+      "change_pct": 4.22
+    },
+    {
+      "date": "2026-04-22",
+      "open": 615,
+      "high": 626,
+      "low": 598,
+      "close": 600,
+      "volume": 28328000,
+      "change_pct": -2.76
+    },
+    {
+      "date": "2026-04-23",
+      "open": 612,
+      "high": 622,
+      "low": 540,
+      "close": 560,
+      "volume": 52014000,
+      "change_pct": -6.67
+    },
+    {
+      "date": "2026-04-24",
+      "open": 576,
+      "high": 604,
+      "low": 533,
+      "close": 547,
+      "volume": 51178000,
+      "change_pct": -2.32
+    },
+    {
+      "date": "2026-04-27",
+      "open": 555,
+      "high": 560,
+      "low": 492.5,
+      "close": 492.5,
+      "volume": 28694000,
+      "change_pct": -9.96
+    },
+    {
+      "date": "2026-04-28",
+      "open": 493.5,
+      "high": 512,
+      "low": 484,
+      "close": 499.5,
+      "volume": 33028000,
+      "change_pct": 1.42
+    },
+    {
+      "date": "2026-04-29",
+      "open": 499.5,
+      "high": 516,
+      "low": 491,
+      "close": 502,
+      "volume": 15832000,
+      "change_pct": 0.5
+    },
+    {
+      "date": "2026-04-30",
+      "open": 530,
+      "high": 552,
+      "low": 528,
+      "close": 536,
+      "volume": 29263000,
+      "change_pct": 6.77
+    },
+    {
+      "date": "2026-05-04",
+      "open": 553,
+      "high": 557,
+      "low": 510,
+      "close": 524,
+      "volume": 42681000,
+      "change_pct": -2.24
+    },
+    {
+      "date": "2026-05-05",
+      "open": 524,
+      "high": 566,
+      "low": 516,
+      "close": 555,
+      "volume": 35735000,
+      "change_pct": 5.92
+    },
+    {
+      "date": "2026-05-06",
+      "open": 555,
+      "high": 556,
+      "low": 499.5,
+      "close": 500,
+      "volume": 44322000,
+      "change_pct": -9.91
+    },
+    {
+      "date": "2026-05-07",
+      "open": 496,
+      "high": 522,
+      "low": 473,
+      "close": 500,
+      "volume": 39372000,
+      "change_pct": 0
+    },
+    {
+      "date": "2026-05-08",
+      "open": 494.5,
+      "high": 518,
+      "low": 481.5,
+      "close": 492.5,
+      "volume": 25292000,
+      "change_pct": -1.5
+    },
+    {
+      "date": "2026-05-11",
+      "open": 500,
+      "high": 538,
+      "low": 493.5,
+      "close": 526,
+      "volume": 25293000,
+      "change_pct": 6.8
+    },
+    {
+      "date": "2026-05-12",
+      "open": 555,
+      "high": 559,
+      "low": 510,
+      "close": 512,
+      "volume": 32043000,
+      "change_pct": -2.66
+    },
+    {
+      "date": "2026-05-13",
+      "open": 506,
+      "high": 515,
+      "low": 488,
+      "close": 495.5,
+      "volume": 21287000,
+      "change_pct": -3.22
+    },
+    {
+      "date": "2026-05-14",
+      "open": 503,
+      "high": 504,
+      "low": 482,
+      "close": 483.5,
+      "volume": 20779000,
+      "change_pct": -2.42
+    },
+    {
+      "date": "2026-05-15",
+      "open": 490,
+      "high": 492.5,
+      "low": 452,
+      "close": 458.5,
+      "volume": 28149000,
+      "change_pct": -5.17
+    },
+    {
+      "date": "2026-05-18",
+      "open": 448,
+      "high": 461,
+      "low": 436,
+      "close": 450.5,
+      "volume": 17645000,
+      "change_pct": -1.74
+    },
+    {
+      "date": "2026-05-19",
+      "open": 450.5,
+      "high": 473,
+      "low": 446.5,
+      "close": 456.5,
+      "volume": 18529000,
+      "change_pct": 1.33
+    },
+    {
+      "date": "2026-05-20",
+      "open": 459.5,
+      "high": 478,
+      "low": 442.5,
+      "close": 446.5,
+      "volume": 28370000,
+      "change_pct": -2.19
+    },
+    {
+      "date": "2026-05-21",
+      "open": 459.5,
+      "high": 489,
+      "low": 456.5,
+      "close": 483,
+      "volume": 24546000,
+      "change_pct": 8.17
+    },
+    {
+      "date": "2026-05-22",
+      "open": 506,
+      "high": 531,
+      "low": 499.5,
+      "close": 531,
+      "volume": 28969000,
+      "change_pct": 9.94
+    },
+    {
+      "date": "2026-05-25",
+      "open": 551,
+      "high": 565,
+      "low": 538,
+      "close": 543,
+      "volume": 42354000,
+      "change_pct": 2.26
+    },
+    {
+      "date": "2026-05-26",
+      "open": 551,
+      "high": 562,
+      "low": 517,
+      "close": 562,
+      "volume": 33746000,
+      "change_pct": 3.5
+    },
+    {
+      "date": "2026-05-27",
+      "open": 571,
+      "high": 588,
+      "low": 545,
+      "close": 560,
+      "volume": 48184000,
+      "change_pct": -0.36
+    },
+    {
+      "date": "2026-05-28",
+      "open": 558,
+      "high": 582,
+      "low": 520,
+      "close": 528,
+      "volume": 48754000,
+      "change_pct": -5.71
+    },
+    {
+      "date": "2026-05-29",
+      "open": 542,
+      "high": 544,
+      "low": 516,
+      "close": 527,
+      "volume": 26012000,
+      "change_pct": -0.19
+    },
+    {
+      "date": "2026-06-01",
+      "open": 528,
+      "high": 546,
+      "low": 522,
+      "close": 530,
+      "volume": 23733000,
+      "change_pct": 0.57
+    },
+    {
+      "date": "2026-06-02",
+      "open": 538,
+      "high": 554,
+      "low": 515,
+      "close": 519,
+      "volume": 33279000,
+      "change_pct": -2.08
+    },
+    {
+      "date": "2026-06-03",
+      "open": 545,
+      "high": 564,
+      "low": 508,
+      "close": 515,
+      "volume": 40451000,
+      "change_pct": -0.77
+    },
+    {
+      "date": "2026-06-04",
+      "open": 515,
+      "high": 533,
+      "low": 486,
+      "close": 487.5,
+      "volume": 28501000,
+      "change_pct": -5.34
+    },
+    {
+      "date": "2026-06-05",
+      "open": 486.5,
+      "high": 498,
+      "low": 451,
+      "close": 483.5,
+      "volume": 30445000,
+      "change_pct": -0.82
+    },
+    {
+      "date": "2026-06-08",
+      "open": 435.5,
+      "high": 461.5,
+      "low": 435.5,
+      "close": 451.5,
+      "change_pct": -6.62,
+      "volume": 20983500
+    }
+  ]
+}

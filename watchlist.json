@@ -1,0 +1,17 @@
+{
+  "updated": "2026-06-09",
+  "note": "追蹤清單設定檔。market 決定打哪個 API：TWSE=上市(證交所)，TPEx=上櫃(櫃買中心)。新增/刪除標的直接改這個檔。",
+  "stocks": [
+    { "code": "2330",   "name": "台積電",          "market": "TWSE", "industry": "半導體晶圓代工",        "track": true },
+    { "code": "3231",   "name": "緯創",            "market": "TWSE", "industry": "AI伺服器代工",          "track": true },
+    { "code": "2356",   "name": "英業達",          "market": "TWSE", "industry": "伺服器/筆電代工",        "track": true },
+    { "code": "2367",   "name": "燿華",            "market": "TWSE", "industry": "PCB(車用)",            "track": true },
+    { "code": "3059",   "name": "華晶科",          "market": "TWSE", "industry": "光電/影像模組",         "track": true },
+    { "code": "3021",   "name": "鴻名",            "market": "TWSE", "industry": "連接器/線組",           "track": true },
+    { "code": "5443",   "name": "均豪",            "market": "TWSE", "industry": "半導體/先進封裝設備",     "track": true },
+    { "code": "00403A", "name": "主動統一升級50",   "market": "TWSE", "industry": "主動式台股ETF",         "track": true, "type": "ETF" },
+    { "code": "4577",   "name": "達航科技",         "market": "TPEx", "industry": "PCB設備",             "track": true },
+    { "code": "3587",   "name": "閎康",            "market": "TPEx", "industry": "材料分析檢測",          "track": true },
+    { "code": "6261",   "name": "久元",            "market": "TPEx", "industry": "IC測試",              "track": true }
+  ]
+}

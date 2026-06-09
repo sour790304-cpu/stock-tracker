@@ -1,0 +1,132 @@
+:root {
+  --up: #d32f2f;      /* 漲紅 */
+  --down: #1b8a3a;    /* 跌綠 */
+  --flat: #666;
+  --bg: #f4f5f7;
+  --card: #fff;
+  --line: #e6e8ec;
+  --text: #1f2430;
+  --muted: #8a90a0;
+  --accent: #2962ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.app { max-width: 1180px; margin: 0 auto; padding: 20px 16px 48px; }
+.state { padding: 80px 20px; text-align: center; color: var(--muted); }
+code { background: #eef; padding: 1px 6px; border-radius: 4px; }
+
+/* Topbar */
+.topbar {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+}
+.topbar h1 { margin: 0; font-size: 1.6rem; }
+.subtitle { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.updated { text-align: right; font-size: .9rem; }
+.updated .muted { color: var(--muted); font-size: .78rem; }
+.muted { color: var(--muted); }
+
+.banner-warn {
+  background: #fff4e5; border: 1px solid #ffd9a0; color: #8a5a00;
+  padding: 8px 12px; border-radius: 8px; font-size: .85rem; margin-bottom: 14px;
+}
+
+/* Layout */
+.layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; align-items: start; }
+.col-main, .col-side { display: flex; flex-direction: column; gap: 16px; }
+
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+.card h2 { margin: 0 0 12px; font-size: 1.05rem; }
+.hint { margin: 10px 0 0; color: var(--muted); font-size: .78rem; }
+.empty { color: var(--muted); padding: 20px 0; text-align: center; }
+
+/* Table */
+.table-wrap { overflow-x: auto; }
+table.overview { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.overview th, .overview td { padding: 8px 10px; text-align: left; white-space: nowrap; }
+.overview th { color: var(--muted); font-weight: 600; border-bottom: 2px solid var(--line); font-size: .8rem; }
+.overview td { border-bottom: 1px solid var(--line); }
+.overview .num { text-align: right; font-variant-numeric: tabular-nums; }
+.overview .code { font-weight: 600; }
+.overview .vol { color: var(--muted); font-size: .82rem; }
+.row { cursor: pointer; transition: background .12s; }
+.row:hover { background: #f7f9ff; }
+.row.active { background: #eaf0ff; }
+
+.up { color: var(--up); }
+.down { color: var(--down); }
+.flat { color: var(--flat); }
+
+.tag { font-size: .7rem; padding: 2px 7px; border-radius: 99px; margin-right: 4px; white-space: nowrap; }
+.tags-cell { white-space: nowrap; }
+.tag-AI { background: #e6f0ff; color: #2962ff; }
+.tag-衛星 { background: #efe6ff; color: #7b3ff2; }
+.tag-其他 { background: #eef0f3; color: #666; }
+.tag-ETF { background: #fdeede; color: #c2700a; }
+
+/* 分類篩選 chips */
+.filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-chips button {
+  border: 1px solid var(--line); background: #fff; color: var(--muted);
+  padding: 4px 11px; border-radius: 99px; cursor: pointer; font-size: .8rem;
+}
+.filter-chips button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Chart */
+.chart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 8px; flex-wrap: wrap; }
+.chart-head h2 { margin: 0; }
+.chart-box { height: 300px; }
+.range-toggle { display: flex; gap: 4px; }
+.range-toggle button {
+  border: 1px solid var(--line); background: #fff; color: var(--muted);
+  padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: .82rem;
+}
+.range-toggle button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Commentary */
+.date-select { border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; font-size: .85rem; }
+.badge { display: inline-block; background: #eef2ff; color: var(--accent); font-size: .72rem; padding: 2px 8px; border-radius: 99px; margin-bottom: 6px; }
+.badge-rule { background: #f0f2f5; color: var(--muted); margin-top: 10px; }
+.commentary-ai p { margin: 6px 0; }
+.commentary-rule .summary { margin: 6px 0; font-size: .92rem; }
+.highlights { margin: 8px 0 0; padding-left: 18px; font-size: .86rem; color: #444; }
+.highlights li { margin: 3px 0; }
+
+/* Fundamentals */
+.f-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.f-head h2 { margin: 0; }
+.f-industry { color: var(--muted); margin: 2px 0 12px; font-size: .85rem; }
+.rating { font-size: .74rem; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
+.r-core { background: #e6f5ea; color: #1b8a3a; }
+.r-risk { background: #fdeaea; color: #d32f2f; }
+.r-high { background: #fff4e0; color: #c2700a; }
+.r-neutral { background: #eef0f3; color: #555; }
+.f-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; margin-bottom: 10px; }
+.f-field { display: flex; justify-content: space-between; border-bottom: 1px dashed var(--line); padding: 3px 0; font-size: .85rem; }
+.f-label { color: var(--muted); }
+.f-value { font-weight: 600; font-variant-numeric: tabular-nums; }
+.f-block { font-size: .84rem; margin: 6px 0; }
+.f-risk { color: #a04040; }
+.f-note { font-size: .76rem; color: var(--muted); margin-top: 8px; }
+
+/* Footer */
+.footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; text-align: center; }
+
+/* RWD */
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .topbar { align-items: flex-start; }
+  .updated { text-align: left; }
+}

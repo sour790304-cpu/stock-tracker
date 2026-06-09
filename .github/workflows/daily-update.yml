@@ -1,0 +1,70 @@
+name: 每日更新與部署
+
+on:
+  schedule:
+    # cron 為 UTC。台股收盤 13:30，盤後資料整理後執行。
+    # 台灣 17:30 = UTC 09:30，週一到週五。
+    - cron: "30 9 * * 1-5"
+  workflow_dispatch: # 允許手動觸發
+
+permissions:
+  contents: write   # 讓更新後的資料 commit 回 repo
+  pages: write      # 部署到 GitHub Pages
+  id-token: write
+
+# 避免同時多個部署互相覆蓋
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: 抓取資料 + 產生評論
+        env:
+          # 設定 secret 後自動啟用 AI 評論(方案 B)；未設定則只用規則式(方案 A)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run update
+
+      - name: Commit 更新後的資料
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --staged --quiet; then
+            echo "今日無資料變動(休市或已更新)，略過 commit。"
+          else
+            git commit -m "data: 更新收盤資料與評論 $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Build 前端
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
