@@ -6,9 +6,10 @@ const MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001'
 /**
  * @param {Array} stocks 當日正規化個股
  * @param {object} ruleResult 規則式評論結果(當作事實基礎餵給模型)
+ * @param {string} techText 技術面摘要(均線排列/乖離/量能/交叉)
  * @returns {Promise<string|null>} 一段中文短評，含免責；無金鑰或失敗回傳 null
  */
-export async function buildAICommentary(stocks, ruleResult) {
+export async function buildAICommentary(stocks, ruleResult, techText = '') {
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) {
     console.log('  [AI] 未設定 ANTHROPIC_API_KEY，略過 AI 評論。')
@@ -25,11 +26,15 @@ export async function buildAICommentary(stocks, ruleResult) {
 規則：
 - 只根據下列提供的數據描述，不可臆測未公開消息、不可預測明日走勢。
 - 語氣自然口語、像給朋友看的盤後筆記，但保持客觀。
+- 適度帶入技術面觀點(均線多空排列、站上/跌破月線季線、黃金/死亡交叉、量能、乖離)，但不要逐檔流水帳。
 - 結尾另起一行加上免責：「以上僅為數據整理，非投資建議。」
 
 【統計】
 ${ruleResult.summary}
 重點：${ruleResult.highlights.join('；') || '無顯著異常'}
+
+【技術面摘要】
+${techText || '(無)'}
 
 【個股收盤】
 ${facts}`

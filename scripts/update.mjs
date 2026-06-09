@@ -27,6 +27,7 @@ try {
 import { fetchTWSE, fetchTPEx } from './lib/markets.mjs'
 import { buildRuleCommentary } from './commentary/ruleBased.mjs'
 import { buildAICommentary } from './commentary/ai.mjs'
+import { summarize } from '../src/lib/indicators.js'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA = join(ROOT, 'public', 'data')
@@ -92,9 +93,34 @@ async function main() {
     historyMap[s.code] = (await readJSON(join(DATA, 'history', `${s.code}.json`), { code: s.code, points: [] })).points || []
   }
 
+  // 計算技術指標(均線/乖離/量能/交叉)，存進每筆並彙整給評論用
+  for (const s of fetched) {
+    const past = (historyMap[s.code] || []).filter((p) => p.date < s.trading_date)
+    const series = [...past, { close: s.close, volume: s.volume }]
+    s.indicators = summarize(series)
+  }
+  const techText = fetched
+    .filter((s) => s.indicators?.trend)
+    .map((s) => {
+      const ind = s.indicators
+      const sig = ind.signals.length ? `，${ind.signals.join('、')}` : ''
+      const bias = ind.bias20 != null ? `，月線乖離${ind.bias20 > 0 ? '+' : ''}${ind.bias20}%` : ''
+      const vr = ind.vol_ratio != null ? `，量能${ind.vol_ratio}倍` : ''
+      return `${s.name}(${s.code}) ${ind.trend}${bias}${vr}${sig}`
+    })
+    .join('\n')
+
   // 產生評論：先規則式，再(可選)AI
   const rule = buildRuleCommentary(fetched, historyMap)
-  const ai = await buildAICommentary(fetched, rule)
+
+  // 把顯著技術訊號(交叉/月線季線得失)補進規則式重點
+  for (const s of fetched) {
+    for (const sig of s.indicators?.signals || []) {
+      rule.highlights.push(`${s.name}(${s.code}) ${sig}`)
+    }
+  }
+
+  const ai = await buildAICommentary(fetched, rule, techText)
 
   // 寫 prices.json
   const prices = {
