@@ -20,7 +20,8 @@
 ```bash
 npm install          # 安裝相依
 npm run backfill     # 回補近 3 個月歷史(首次建議跑，讓走勢圖有資料)
-npm run update       # 抓最新收盤、產生評論、寫入 public/data/
+npm run update       # 抓最新收盤、算技術指標、產生評論、寫入 public/data/
+npm run picks        # 抓台股新聞 → AI 篩出「明日觀察清單」3 檔(排除已追蹤股)
 npm run dev          # 開發伺服器 http://localhost:5173
 npm run build        # 打包到 dist/
 npm test             # 單元測試(parser / 工具函式)

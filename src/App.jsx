@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Picks from './components/Picks.jsx'
 import OverviewTable from './components/OverviewTable.jsx'
 import StockChart from './components/StockChart.jsx'
 import FundamentalsCard from './components/FundamentalsCard.jsx'
@@ -43,6 +44,8 @@ export default function App() {
       {prices.errors?.length > 0 && (
         <div className="banner-warn">部分來源更新異常：{prices.errors.join('；')}（顯示為前一次成功資料）</div>
       )}
+
+      <Picks />
 
       <main className="layout">
         <section className="col-main">

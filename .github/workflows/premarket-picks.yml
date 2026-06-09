@@ -1,0 +1,69 @@
+name: 盤前觀察清單
+
+on:
+  schedule:
+    # 台灣 07:30 = UTC 前一天 23:30。UTC 週日~週四 = 台灣 週一~週五盤前。
+    - cron: "30 23 * * 0-4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  picks-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: 抓新聞 + 產生明日觀察清單
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 想用更強的模型可在 repo variables/secrets 設 PICKS_MODEL
+          PICKS_MODEL: ${{ vars.PICKS_MODEL }}
+        run: npm run picks
+
+      - name: Commit 觀察清單
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/picks
+          if git diff --staged --quiet; then
+            echo "無新觀察清單(可能無新聞或休市)，略過 commit。"
+          else
+            git commit -m "picks: 盤前觀察清單 $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Build 前端
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

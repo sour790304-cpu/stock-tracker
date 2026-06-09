@@ -75,6 +75,29 @@ export async function fetchJSON(url, { retries = 3, timeoutMs = 60000, label = '
   throw new Error(`抓取失敗(${label || url}): ${lastErr?.message}`)
 }
 
+/** 帶 timeout 與重試的 fetch，回傳純文字(用於 RSS/XML) */
+export async function fetchText(url, { retries = 3, timeoutMs = 30000, label = '' } = {}) {
+  let lastErr
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const controller = new AbortController()
+    const timer = setTimeout(() => controller.abort(), timeoutMs)
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': 'tw-stock-tracker/1.0 (+personal use)' },
+      })
+      clearTimeout(timer)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      return await res.text()
+    } catch (err) {
+      clearTimeout(timer)
+      lastErr = err
+      if (attempt < retries) await sleep(attempt * 1500)
+    }
+  }
+  throw new Error(`抓取失敗(${label || url}): ${lastErr?.message}`)
+}
+
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 export async function readJSON(path, fallback = null) {

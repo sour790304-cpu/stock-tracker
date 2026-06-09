@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-09",
+  "generated_at": "2026-06-09T08:28:21.309Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "close": 4070,
+      "change": -230,
+      "reason": "股價漲停，領軍台股強力反彈，為權值股護盤主力",
+      "catalyst": "台股強彈1201點，聯發科漲停領軍科技股回神",
+      "risk": "高檔震盪風險，外資仍在賣超",
+      "sentiment": "利多",
+      "news_title": "台股收盤大漲1201點 台積電漲10元、聯發科飆漲停 - Yahoo新聞",
+      "news_link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPV1pqb1A5ZzRYNndWa25sN3pUeDVwdzZLcHphYVc5cWEzYWV4Y0cxWEZ4cy1hZVNjNFpLRmVReUVfekRfbUNWMWpBc1BKNUlDTkIzbDRHc0pGcHppUWpoUy1vQlF6Mkhaci1uXy1TQlV2OXlxZkNzMkZvZ1duSzRDSGpjOTJwcWRUMHNrLVJfb3NPaDg1UWFER1lVXzFabkkzd3R1Z2stT0VQWmpNc3BhR1ZQNGlyalBKUUFfSmZKbzNUQTNmVXZkeFlFN1JiVUF0NW9ITmpsSk1hRDJGTG03X2s3SzlJdno4TFBQTk5jREFwMlVOT0NYeEtfLTZEWXdOWFNpcDR5Y0ZzQlBPWXpTemplM0R3c2dlZGkxTUotQXRYWklWZUVrV2c2SmRPdlh0RjdnVGxR?oc=5",
+      "news_source": "Yahoo新聞"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "market": "TWSE",
+      "close": 751,
+      "change": -18,
+      "reason": "龍頭被動元件股漲停，外資目標價上調3倍，複製記憶體行情",
+      "catalyst": "被動元件複製記憶體行情，外資目標價上調3倍",
+      "risk": "產業景氣循環風險",
+      "sentiment": "利多",
+      "news_title": "被動元件複製記憶體行情！龍頭國巨飆漲停　外資目標價上調3倍 - ETtoday財經雲",
+      "news_link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE94TDcyM2pnRzVJTFlYXzd6U2EyYnJicWg5RGRnRlVnNjgxZ0tEcDRTQnYtTmI0X01jelh6ODcwc2hzZm5OY01rUkhTRjZLMlI5SkHSAW5BVV95cUxQZzE4MWVGbzNVeGQ4WjA4cllSckZtZ0RHTHpVY0FOaWFKWjlkNzBLZzBNd3B0NERlWEJhb09nanpmSGJlWHV0c3N5UHJYME5pbEUwRlFDd1I4cWVFbzc0TjV1cHFtcDRKdWY1OWxuZw?oc=5",
+      "news_source": "ETtoday財經雲"
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "market": "TWSE",
+      "close": 3535,
+      "change": -145,
+      "reason": "光學股漲停，蘋果WWDC釋雙利多刺激光學鏡頭廠需求",
+      "catalyst": "蘋果庫克WWDC引爆AI視覺新浪潮，台灣光學鏡頭廠滿血復活",
+      "risk": "蘋果產品銷售波動風險",
+      "sentiment": "利多",
+      "news_title": "大立光亮燈應援 被動一票攻漲停 台股上漲526點 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNQUpnd3hpQXJ5NGVFNjhwbkNiZkxlSG5BT0p3bkxwMjFmaFlmUnlpNElneWVLZHRTZ3ZUNUFndTlQVzd2ajZfcU9HVG1vMllnY3RUZmVFVDNMbHB1clpEdVdoUHBjaWJ6WTlWU3pzZFpOV1FyZmFGODBTY00xNXZocVkxWHVLdXlnaTRmeXY0Q25adGtDa2FxOV9rWnFzVVE5elNsUFBrbnpFNFZEVU50T19NZ1BHYm5CbTlDUW42ZlFKTDNFcTVjOXpyRkNKWng3UFVMRkJNWGdHbVExTjl2aHUwNm50aXZ5bXhQNkNKTXJMQ3FuYi1neEd6eEpvU3ZvLXNhNE1XWUFYbkFkdGJvOURVUUFoNEQtSzNlUFNFQ2h6eDlNN09DOGxHUmFNNm1hdWRoenRhYlJsNnM?oc=5",
+      "news_source": "Yahoo股市"
+    }
+  ]
+}

@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "update": "node scripts/update.mjs",
+    "picks": "node scripts/picks.mjs",
     "backfill": "node scripts/backfill.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\""
   },

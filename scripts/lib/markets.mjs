@@ -89,3 +89,26 @@ export async function fetchTPEx(codes) {
     .map(normalizeTPEx)
     .filter((s) => s.close !== null)
 }
+
+/**
+ * 抓全市場清單(上市+上櫃)，建立 名稱→{code,market,close} 與 code 集合。
+ * 用於把新聞中的「公司名」對回正確股號，並過濾不存在的代號。
+ */
+export async function fetchAllLists() {
+  const [tw, tp] = await Promise.all([
+    fetchJSON(TWSE_ALL, { label: 'TWSE all', timeoutMs: 90000 }),
+    fetchJSON(TPEX_ALL, { label: 'TPEx all', timeoutMs: 90000 }),
+  ])
+  const byName = new Map()
+  const byCode = new Map()
+  for (const r of Array.isArray(tw) ? tw : []) {
+    const o = { code: r.Code, name: r.Name, market: 'TWSE', close: cleanNumber(r.ClosingPrice), change: cleanNumber(r.Change) }
+    byCode.set(r.Code, o); byName.set(r.Name, o)
+  }
+  for (const r of Array.isArray(tp) ? tp : []) {
+    const nm = (r.CompanyName || '').trim()
+    const o = { code: r.SecuritiesCompanyCode, name: nm, market: 'TPEx', close: cleanNumber(r.Close), change: cleanNumber(r.Change) }
+    byCode.set(r.SecuritiesCompanyCode, o); byName.set(nm, o)
+  }
+  return { byName, byCode }
+}
