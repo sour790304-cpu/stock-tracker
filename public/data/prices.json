@@ -1,232 +1,34 @@
 {
-  "updated_at": "2026-06-09T07:51:07.284Z",
-  "trading_date": "2026-06-08",
-  "errors": [],
+  "updated_at": "2026-06-10T04:51:22.401Z",
+  "trading_date": "2026-06-09",
+  "errors": [
+    "TWSE: 抓取失敗(TWSE STOCK_DAY_ALL): Unexpected token '<', \"<html>\n<he\"... is not valid JSON"
+  ],
   "stocks": [
-    {
-      "code": "2330",
-      "name": "台積電",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 2230,
-      "high": 2320,
-      "low": 2230,
-      "close": 2295,
-      "change": -70,
-      "change_pct": -2.96,
-      "volume": 52273858,
-      "value": 119557290165,
-      "transactions": 436256,
-      "tags": [
-        "AI"
-      ],
-      "industry": "半導體晶圓代工",
-      "indicators": {
-        "ma5": 2370,
-        "ma20": 2293,
-        "ma60": 2100.83,
-        "bias20": 0.09,
-        "vol_ratio": 1.24,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 156,
-      "high": 163.5,
-      "low": 156,
-      "close": 163.5,
-      "change": -7.5,
-      "change_pct": -4.39,
-      "volume": 71040675,
-      "value": 11394830105,
-      "transactions": 57624,
-      "tags": [
-        "AI"
-      ],
-      "industry": "AI伺服器代工",
-      "indicators": {
-        "ma5": 179.1,
-        "ma20": 152.65,
-        "ma60": 140.68,
-        "bias20": 7.11,
-        "vol_ratio": 0.9,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 69.2,
-      "high": 69.2,
-      "low": 69.2,
-      "close": 69.2,
-      "change": -7.6,
-      "change_pct": -9.9,
-      "volume": 17530602,
-      "value": 1213125097,
-      "transactions": 22236,
-      "tags": [
-        "AI"
-      ],
-      "industry": "伺服器/筆電代工",
-      "indicators": {
-        "ma5": 77.96,
-        "ma20": 63.33,
-        "ma60": 50.93,
-        "bias20": 9.27,
-        "vol_ratio": 0.15,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "6669",
-      "name": "緯穎",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 5200,
-      "high": 5330,
-      "low": 5135,
-      "close": 5275,
-      "change": -385,
-      "change_pct": -6.8,
-      "volume": 1928576,
-      "value": 10078649265,
-      "transactions": 20875,
-      "tags": [
-        "AI"
-      ],
-      "industry": "AI伺服器白牌(緯創集團)",
-      "indicators": {
-        "ma5": 5516,
-        "ma20": 5356.75,
-        "ma60": 4493.25,
-        "bias20": -1.53,
-        "vol_ratio": 0.87,
-        "trend": "多頭排列",
-        "signals": [
-          "跌破月線(MA20)"
-        ]
-      }
-    },
-    {
-      "code": "2382",
-      "name": "廣達",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 357,
-      "high": 376.5,
-      "low": 357,
-      "close": 376.5,
-      "change": -14,
-      "change_pct": -3.59,
-      "volume": 63428197,
-      "value": 23380295756,
-      "transactions": 53961,
-      "tags": [
-        "AI"
-      ],
-      "industry": "AI伺服器/筆電代工龍頭",
-      "indicators": {
-        "ma5": 397.7,
-        "ma20": 338.93,
-        "ma60": 318.68,
-        "bias20": 11.08,
-        "vol_ratio": 1.19,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 2340,
-      "high": 2570,
-      "low": 2340,
-      "close": 2570,
-      "change": -30,
-      "change_pct": -1.15,
-      "volume": 4356915,
-      "value": 10736707610,
-      "transactions": 22359,
-      "tags": [
-        "AI"
-      ],
-      "industry": "散熱(AI液冷)",
-      "indicators": {
-        "ma5": 2687,
-        "ma20": 2588,
-        "ma60": 2408.33,
-        "bias20": -0.7,
-        "vol_ratio": 0.8,
-        "trend": "多頭排列",
-        "signals": [
-          "跌破月線(MA20)"
-        ]
-      }
-    },
-    {
-      "code": "3443",
-      "name": "創意",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 4000,
-      "high": 4315,
-      "low": 4000,
-      "close": 4255,
-      "change": 0,
-      "change_pct": 0,
-      "volume": 1876483,
-      "value": 7743605060,
-      "transactions": 12935,
-      "tags": [
-        "AI"
-      ],
-      "industry": "ASIC設計(博通鏈)",
-      "indicators": {
-        "ma5": 4441,
-        "ma20": 4832.5,
-        "ma60": 3788,
-        "bias20": -11.95,
-        "vol_ratio": 0.64,
-        "trend": "均線糾結/盤整",
-        "signals": []
-      }
-    },
     {
       "code": "5443",
       "name": "均豪",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 103.5,
+      "trading_date": "2026-06-09",
+      "open": 107,
       "high": 108,
-      "low": 103.5,
-      "close": 107.5,
-      "change": -7.5,
-      "change_pct": -6.52,
-      "volume": 3153007,
-      "value": 332552870,
-      "transactions": 3162,
+      "low": 103,
+      "close": 105.5,
+      "change": -2,
+      "change_pct": -1.86,
+      "volume": 4805852,
+      "value": 506790413,
+      "transactions": 4491,
       "tags": [
         "AI"
       ],
       "industry": "半導體/先進封裝設備",
       "indicators": {
-        "ma5": 116.8,
-        "ma20": 122.83,
-        "ma60": 115.61,
-        "bias20": -12.48,
-        "vol_ratio": 0.53,
+        "ma5": 113.6,
+        "ma20": 121.7,
+        "ma60": 115.77,
+        "bias20": -13.31,
+        "vol_ratio": 0.82,
         "trend": "均線糾結/盤整",
         "signals": []
       }
@@ -235,26 +37,26 @@
       "code": "4577",
       "name": "達航科技",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 87.9,
-      "high": 94.2,
-      "low": 87.9,
-      "close": 93.9,
-      "change": -3.7,
-      "change_pct": -3.79,
-      "volume": 584225,
-      "value": 52806751,
-      "transactions": 742,
+      "trading_date": "2026-06-09",
+      "open": 94.8,
+      "high": 97.8,
+      "low": 92.8,
+      "close": 94.3,
+      "change": 0.4,
+      "change_pct": 0.43,
+      "volume": 587845,
+      "value": 55627888,
+      "transactions": 773,
       "tags": [
         "AI"
       ],
       "industry": "PCB設備",
       "indicators": {
-        "ma5": 99.9,
-        "ma20": 120.73,
-        "ma60": 126.38,
-        "bias20": -22.22,
-        "vol_ratio": 0.47,
+        "ma5": 97.96,
+        "ma20": 118.29,
+        "ma60": 126.34,
+        "bias20": -20.28,
+        "vol_ratio": 0.49,
         "trend": "空頭排列",
         "signals": []
       }
@@ -263,29 +65,29 @@
       "code": "3587",
       "name": "閎康",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 273.5,
-      "high": 288.5,
-      "low": 273.5,
-      "close": 286,
-      "change": -17.5,
-      "change_pct": -5.77,
-      "volume": 1580380,
-      "value": 438360012,
-      "transactions": 2883,
+      "trading_date": "2026-06-09",
+      "open": 296,
+      "high": 303,
+      "low": 293.5,
+      "close": 303,
+      "change": 17,
+      "change_pct": 5.94,
+      "volume": 1141496,
+      "value": 342333844,
+      "transactions": 1852,
       "tags": [
         "AI"
       ],
       "industry": "材料分析檢測",
       "indicators": {
-        "ma5": 307.7,
-        "ma20": 334.7,
-        "ma60": 298.47,
-        "bias20": -14.55,
-        "vol_ratio": 0.61,
+        "ma5": 304.9,
+        "ma20": 330.58,
+        "ma60": 300.43,
+        "bias20": -8.34,
+        "vol_ratio": 0.45,
         "trend": "均線糾結/盤整",
         "signals": [
-          "跌破季線(MA60)"
+          "站上季線(MA60)"
         ]
       }
     },
@@ -293,56 +95,27 @@
       "code": "6261",
       "name": "久元",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 96.8,
+      "trading_date": "2026-06-09",
+      "open": 102.5,
       "high": 103,
-      "low": 96.8,
-      "close": 101.5,
-      "change": -6,
-      "change_pct": -5.58,
-      "volume": 2260508,
-      "value": 223161278,
-      "transactions": 2245,
+      "low": 99.1,
+      "close": 99.9,
+      "change": -1.6,
+      "change_pct": -1.58,
+      "volume": 3358638,
+      "value": 336052877,
+      "transactions": 2646,
       "tags": [
         "AI"
       ],
       "industry": "IC測試",
       "indicators": {
-        "ma5": 105.9,
-        "ma20": 115.38,
-        "ma60": 94.76,
-        "bias20": -12.03,
-        "vol_ratio": 0.42,
+        "ma5": 104.28,
+        "ma20": 114.35,
+        "ma60": 95.28,
+        "bias20": -12.64,
+        "vol_ratio": 0.67,
         "trend": "均線糾結/盤整",
-        "signals": []
-      }
-    },
-    {
-      "code": "2367",
-      "name": "燿華",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 56.8,
-      "high": 60.9,
-      "low": 56.8,
-      "close": 60.5,
-      "change": -2.6,
-      "change_pct": -4.12,
-      "volume": 21274883,
-      "value": 1244440015,
-      "transactions": 15383,
-      "tags": [
-        "AI",
-        "衛星"
-      ],
-      "industry": "PCB(車用)/低軌衛星板",
-      "indicators": {
-        "ma5": 63.32,
-        "ma20": 64.85,
-        "ma60": 67.64,
-        "bias20": -6.71,
-        "vol_ratio": 0.43,
-        "trend": "空頭排列",
         "signals": []
       }
     },
@@ -350,89 +123,29 @@
       "code": "3491",
       "name": "昇達科",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 1745,
-      "high": 1820,
-      "low": 1745,
-      "close": 1785,
-      "change": -150,
-      "change_pct": -7.75,
-      "volume": 930746,
-      "value": 1647342770,
-      "transactions": 9376,
+      "trading_date": "2026-06-09",
+      "open": 1860,
+      "high": 1920,
+      "low": 1765,
+      "close": 1810,
+      "change": 25,
+      "change_pct": 1.4,
+      "volume": 3685973,
+      "value": 6706655000,
+      "transactions": 13152,
       "tags": [
         "衛星"
       ],
       "industry": "衛星通訊微波元件",
       "indicators": {
-        "ma5": 1952,
-        "ma20": 1916.25,
-        "ma60": 1695.5,
-        "bias20": -6.85,
-        "vol_ratio": 0.43,
-        "trend": "多頭排列",
-        "signals": [
-          "跌破月線(MA20)"
-        ]
-      }
-    },
-    {
-      "code": "2314",
-      "name": "台揚",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 14.35,
-      "high": 15.8,
-      "low": 14.35,
-      "close": 15.5,
-      "change": -0.3,
-      "change_pct": -1.9,
-      "volume": 356110,
-      "value": 5317883,
-      "transactions": 309,
-      "tags": [
-        "衛星"
-      ],
-      "industry": "衛星地面接收設備",
-      "indicators": {
-        "ma5": 16.19,
-        "ma20": 14.99,
-        "ma60": 15.66,
-        "bias20": 3.4,
-        "vol_ratio": 0.53,
+        "ma5": 1900,
+        "ma20": 1918.5,
+        "ma60": 1703.17,
+        "bias20": -5.66,
+        "vol_ratio": 1.86,
         "trend": "均線糾結/盤整",
         "signals": [
-          "跌破季線(MA60)"
-        ]
-      }
-    },
-    {
-      "code": "6285",
-      "name": "啟碁",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 263,
-      "high": 276.5,
-      "low": 263,
-      "close": 273.5,
-      "change": -18.5,
-      "change_pct": -6.34,
-      "volume": 9780056,
-      "value": 2629813594,
-      "transactions": 14431,
-      "tags": [
-        "衛星"
-      ],
-      "industry": "網通/低軌衛星終端",
-      "indicators": {
-        "ma5": 294.7,
-        "ma20": 291.63,
-        "ma60": 236.87,
-        "bias20": -6.22,
-        "vol_ratio": 0.35,
-        "trend": "多頭排列",
-        "signals": [
-          "跌破月線(MA20)"
+          "死亡交叉(MA5下穿MA20)"
         ]
       }
     },
@@ -440,116 +153,30 @@
       "code": "3105",
       "name": "穩懋",
       "market": "TPEx",
-      "trading_date": "2026-06-08",
-      "open": 435.5,
-      "high": 461.5,
-      "low": 435.5,
-      "close": 451.5,
-      "change": -32,
-      "change_pct": -6.62,
-      "volume": 20983500,
-      "value": 9332858808,
-      "transactions": 27091,
+      "trading_date": "2026-06-09",
+      "open": 462,
+      "high": 496.5,
+      "low": 454.5,
+      "close": 496.5,
+      "change": 45,
+      "change_pct": 9.97,
+      "volume": 15424546,
+      "value": 7405378647,
+      "transactions": 14828,
       "tags": [
         "衛星"
       ],
       "industry": "砷化鎵射頻(衛星/通訊)",
       "indicators": {
-        "ma5": 491.3,
-        "ma20": 501.18,
-        "ma60": 460.85,
-        "bias20": -9.91,
-        "vol_ratio": 0.7,
+        "ma5": 486.8,
+        "ma20": 500.4,
+        "ma60": 464.02,
+        "bias20": -0.78,
+        "vol_ratio": 0.52,
         "trend": "均線糾結/盤整",
         "signals": [
-          "死亡交叉(MA5下穿MA20)",
-          "跌破季線(MA60)"
+          "站上季線(MA60)"
         ]
-      }
-    },
-    {
-      "code": "3059",
-      "name": "華晶科",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 44.05,
-      "high": 46.2,
-      "low": 44.05,
-      "close": 46.05,
-      "change": -2.85,
-      "change_pct": -5.83,
-      "volume": 9795522,
-      "value": 439377087,
-      "transactions": 6113,
-      "tags": [
-        "其他"
-      ],
-      "industry": "光電/影像模組/無人機",
-      "indicators": {
-        "ma5": 49.47,
-        "ma20": 44.01,
-        "ma60": 39.92,
-        "bias20": 4.64,
-        "vol_ratio": 0.73,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "3021",
-      "name": "鴻名",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 29.2,
-      "high": 29.2,
-      "low": 29.2,
-      "close": 29.2,
-      "change": -3.2,
-      "change_pct": -9.88,
-      "volume": 156890,
-      "value": 4581178,
-      "transactions": 182,
-      "tags": [
-        "其他"
-      ],
-      "industry": "連接器/線組",
-      "indicators": {
-        "ma5": 34.8,
-        "ma20": 24.29,
-        "ma60": 18.98,
-        "bias20": 20.21,
-        "vol_ratio": 0.15,
-        "trend": "多頭排列",
-        "signals": []
-      }
-    },
-    {
-      "code": "00403A",
-      "name": "主動統一升級50",
-      "market": "TWSE",
-      "trading_date": "2026-06-08",
-      "open": 9.7,
-      "high": 10.15,
-      "low": 9.69,
-      "close": 10.13,
-      "change": -0.28,
-      "change_pct": -2.69,
-      "volume": 687072227,
-      "value": 6834206053,
-      "transactions": 165474,
-      "tags": [
-        "ETF"
-      ],
-      "industry": "主動式台股ETF",
-      "type": "ETF",
-      "indicators": {
-        "ma5": 10.52,
-        "ma20": 10.36,
-        "ma60": null,
-        "bias20": -2.22,
-        "vol_ratio": null,
-        "trend": null,
-        "signals": []
       }
     }
   ]
