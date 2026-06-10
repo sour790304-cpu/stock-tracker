@@ -1,4 +1,4 @@
 {
-  "realtime_proxy": "",
+  "realtime_proxy": "https://tw-stock-quote.sour-c.workers.dev",
   "_note": "把 Cloudflare Worker 網址填進 realtime_proxy(例如 https://tw-stock-quote.xxx.workers.dev)，前端即會出現「即時」模式。留空則只有盤後模式。"
 }
