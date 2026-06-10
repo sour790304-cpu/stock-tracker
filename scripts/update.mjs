@@ -55,7 +55,7 @@ async function main() {
     catch (e) { errors.push(`TPEx: ${e.message}`); console.error(`  TPEx 失敗: ${e.message}`) }
   }
 
-  const fetched = [...twse, ...tpex]
+  let fetched = [...twse, ...tpex]
   if (fetched.length === 0) {
     console.error('兩個來源皆無資料，保留既有檔案，結束。')
     process.exitCode = 1
@@ -73,15 +73,37 @@ async function main() {
     }
   }
 
-  // 依 watchlist 順序排列
-  const order = new Map(tracked.map((s, i) => [s.code, i]))
-  fetched.sort((a, b) => (order.get(a.code) ?? 999) - (order.get(b.code) ?? 999))
+  // 依 watchlist 順序「重建」陣列(直接照 tracked 順序挑出對應個股，找不到的附在最後)。
+  // 比用 sort 比較器 + (?? 999) 穩健：避免任何查找落空時把上市/上櫃排錯。
+  const byCode = new Map(fetched.map((s) => [s.code, s]))
+  const ordered = tracked.map((t) => byCode.get(t.code)).filter(Boolean)
+  const extras = fetched.filter((s) => !tracked.some((t) => t.code === s.code))
+  fetched = [...ordered, ...extras]
 
-  const tradingDate = mostCommonDate(fetched)
-  console.log(`最新交易日：${tradingDate}`)
+  // 補足缺漏：若某來源本次失敗(例如 TWSE 暫時抓不到)，用前一份資料補上缺的個股，
+  // 避免把殘缺檔(只剩部分股)蓋掉完整檔。被補的標記 stale。
+  const prevPrices = await readJSON(join(DATA, 'prices.json'))
+  const prevByCode = new Map((prevPrices?.stocks || []).map((s) => [s.code, s]))
+  const freshCodes = new Set(fetched.map((s) => s.code))
+  const missing = tracked.filter((t) => !freshCodes.has(t.code))
+  if (missing.length) {
+    for (const t of missing) {
+      const old = prevByCode.get(t.code)
+      if (old) { fetched.push({ ...old, stale: true }); errors.push(`${t.code}(${t.name}) 本次未取得，沿用前一日`) }
+      else errors.push(`${t.code}(${t.name}) 本次未取得且無前一日資料`)
+    }
+    // 補完後重新依 watchlist 順序排
+    const bc = new Map(fetched.map((s) => [s.code, s]))
+    fetched = tracked.map((t) => bc.get(t.code)).filter(Boolean)
+      .concat(fetched.filter((s) => !tracked.some((t) => t.code === s.code)))
+    console.warn(`  ⚠ 本次缺 ${missing.length} 檔(${missing.map((m) => m.code).join(',')})，已沿用前一日補足`)
+  }
+
+  const freshStocks = fetched.filter((s) => !s.stale)
+  const tradingDate = mostCommonDate(freshStocks)
+  console.log(`最新交易日：${tradingDate}（新資料 ${freshStocks.length} 檔${missing.length ? `、沿用 ${missing.length} 檔` : ''}）`)
 
   // 偵測無新資料
-  const prevPrices = await readJSON(join(DATA, 'prices.json'))
   if (!FORCE && prevPrices?.trading_date && tradingDate && tradingDate <= prevPrices.trading_date) {
     console.log(`資料未更新(既有 ${prevPrices.trading_date} >= 抓取 ${tradingDate})，略過。加 --force 可強制覆寫。`)
     return
@@ -93,13 +115,14 @@ async function main() {
     historyMap[s.code] = (await readJSON(join(DATA, 'history', `${s.code}.json`), { code: s.code, points: [] })).points || []
   }
 
-  // 計算技術指標(均線/乖離/量能/交叉)，存進每筆並彙整給評論用
+  // 計算技術指標(均線/乖離/量能/交叉)；stale(沿用前一日)的保留其既有指標
   for (const s of fetched) {
+    if (s.stale) continue
     const past = (historyMap[s.code] || []).filter((p) => p.date < s.trading_date)
     const series = [...past, { close: s.close, volume: s.volume }]
     s.indicators = summarize(series)
   }
-  const techText = fetched
+  const techText = freshStocks
     .filter((s) => s.indicators?.trend)
     .map((s) => {
       const ind = s.indicators
@@ -110,17 +133,17 @@ async function main() {
     })
     .join('\n')
 
-  // 產生評論：先規則式，再(可選)AI
-  const rule = buildRuleCommentary(fetched, historyMap)
+  // 產生評論：先規則式，再(可選)AI；只用本次新資料(排除 stale)
+  const rule = buildRuleCommentary(freshStocks, historyMap)
 
   // 把顯著技術訊號(交叉/月線季線得失)補進規則式重點
-  for (const s of fetched) {
+  for (const s of freshStocks) {
     for (const sig of s.indicators?.signals || []) {
       rule.highlights.push(`${s.name}(${s.code}) ${sig}`)
     }
   }
 
-  const ai = await buildAICommentary(fetched, rule, techText)
+  const ai = await buildAICommentary(freshStocks, rule, techText)
 
   // 寫 prices.json
   const prices = {
@@ -132,8 +155,8 @@ async function main() {
   await writeJSON(join(DATA, 'prices.json'), prices)
   console.log(`  寫入 prices.json (${fetched.length} 檔)`)
 
-  // append 歷史(去重同一交易日)
-  for (const s of fetched) {
+  // append 歷史(去重同一交易日)；stale 不寫入歷史，避免污染
+  for (const s of freshStocks) {
     const file = join(DATA, 'history', `${s.code}.json`)
     const hist = await readJSON(file, { code: s.code, name: s.name, market: s.market, points: [] })
     hist.name = s.name
@@ -143,7 +166,7 @@ async function main() {
     hist.points.sort((a, b) => (a.date < b.date ? -1 : 1))
     await writeJSON(file, hist)
   }
-  console.log(`  更新 ${fetched.length} 個歷史檔`)
+  console.log(`  更新 ${freshStocks.length} 個歷史檔`)
 
   // 寫評論檔 + 更新索引
   const commentary = {

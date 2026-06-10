@@ -729,8 +729,8 @@
       "high": 5380,
       "low": 5210,
       "close": 5300,
-      "volume": 1369099,
-      "change_pct": 0.47
+      "change_pct": 0.47,
+      "volume": 1369099
     }
   ]
 }
