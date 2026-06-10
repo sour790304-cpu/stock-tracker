@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-10",
+  "generated_at": "2026-06-10T01:36:15.778Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "close": 4475,
+      "change": 405,
+      "reason": "股價由黑翻紅並漲停，展現強勢反彈",
+      "catalyst": "聯發科、大立光飆漲停，權值股領軍台股強彈逾千點",
+      "risk": "美國科技股波動仍大，後續走勢需觀察",
+      "sentiment": "利多",
+      "news_title": "聯發科由黑翻紅、台積電開低20元！台股早盤挫跌519點仍守44000關卡 主動式ETF攻佔成交榜 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMi8ANBVV95cUxPR2UycXNvS2MzZGM3dWhzRk5UckpOaGZkYXd2T01DaERseWcxejhXNUtkUnNfZ0xxOTFnY2RZQl9FdWdyOGhSNGhJTmlvRWpwUFhISDJ3Tm1aNDJsVlc1RUJZdTJDVVRXeldzVkxSSDRqWFg2QVZJOUQ1dVkxcTBOV1dYTUp6eTVDZkNSZmQxSmNuYnBpSjV4YmZRNm03dVZpXzZsT0VBM01oc1BYdi1FVk8xVmlnNWNKeVoyZS1PYkRCOTFOTlMyVU5zVmZ2U2t4M2JZR0hoNGhCR0hoN1BQOTZDelNfd1pYSU9zOG5TYmtnWTdIdUNlZ2lGZjZLeDV5YXdsdVJ2U0VlOEE5c3pPSGRWbHhqY3FLNWQxWXlacExvXzNIbmgzVWpQTUY4MmZ4N1lja1RjZWgyNjFCSnBrbElQVFBjNHV0eFFVT29LUDlsODJ0WUxHSVFOSTJZZDR2dzV1MUFlWTN4ZXpYdXVscnhwSUN6bDJmUEJ3OFRtR0YtNHUtWF83aU42MDU5dWpfUjRYNUtRZFNLb3J6LVkyR2FyZkE1bjFlRjNDdC1GS3RrRS1QdnExZnEwQVMwN2UxY3VJYXVJSG9BbGtIeV9DcVM0WXYxZFN3OFVPZTBtekZDYk9lRWVGWTJnX3pEZU9T?oc=5",
+      "news_source": "Yahoo股市"
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "market": "TWSE",
+      "close": 3885,
+      "change": 350,
+      "reason": "股價漲停亮燈，顯示買盤強勁",
+      "catalyst": "大立光、國巨漲停，被動元件一噴漲停；聯發科、大立光飆漲停",
+      "risk": "NB與手機零組件市場承壓，需求仍有不確定性",
+      "sentiment": "利多",
+      "news_title": "大立光、國巨又亮燈！ 被動元件一噴漲停 台股小跌274點 - 東森電視",
+      "news_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lQXl3YTlsTW93Qm04TFlMY2d5dE43RmpjQl9RMmpsa00teW5zRllYdlNaV2hpSmVwTVRSUzFUUXFjWmJjYkc4Ni1hNnFlbWtic0hjUl9B?oc=5",
+      "news_source": "東森電視"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "market": "TWSE",
+      "close": 826,
+      "change": 75,
+      "reason": "被動元件族群亮燈漲停，獲利能力受關注",
+      "catalyst": "大立光、國巨又亮燈，被動元件一噴漲停",
+      "risk": "電子中游零組件市場整體承壓，競爭激烈",
+      "sentiment": "利多",
+      "news_title": "大立光、國巨又亮燈！ 被動元件一噴漲停 台股小跌274點 - 東森電視",
+      "news_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lQXl3YTlsTW93Qm04TFlMY2d5dE43RmpjQl9RMmpsa00teW5zRllYdlNaV2hpSmVwTVRSUzFUUXFjWmJjYkc4Ni1hNnFlbWtic0hjUl9B?oc=5",
+      "news_source": "東森電視"
+    }
+  ]
+}
