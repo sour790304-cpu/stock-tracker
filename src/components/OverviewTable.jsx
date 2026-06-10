@@ -4,7 +4,7 @@ import { trendClass, fmtPct, fmtPrice, fmtChange, fmtVolume } from '../lib/forma
 const TAG_ORDER = ['AI', '衛星', '其他', 'ETF']
 const TAG_LABEL = { AI: 'AI 股', 衛星: 'SpaceX/衛星', 其他: '其他', ETF: 'ETF' }
 
-export default function OverviewTable({ stocks, selected, onSelect }) {
+export default function OverviewTable({ stocks, selected, onSelect, live }) {
   const [filter, setFilter] = useState('全部')
 
   // 出現過的分類(依固定順序)
@@ -48,7 +48,11 @@ export default function OverviewTable({ stocks, selected, onSelect }) {
           </thead>
           <tbody>
             {shown.map((s) => {
-              const cls = trendClass(s.change_pct)
+              const q = live?.[s.code]
+              const price = q && q.price != null ? q.price : s.close
+              const change = q && q.change != null ? q.change : s.change
+              const pct = q && q.change_pct != null ? q.change_pct : s.change_pct
+              const cls = trendClass(pct)
               return (
                 <tr
                   key={s.code}
@@ -62,9 +66,9 @@ export default function OverviewTable({ stocks, selected, onSelect }) {
                       <span key={t} className={`tag tag-${t}`}>{t}</span>
                     ))}
                   </td>
-                  <td className={`num ${cls}`}>{fmtPrice(s.close)}</td>
-                  <td className={`num ${cls}`}>{fmtChange(s.change)}</td>
-                  <td className={`num ${cls}`}>{fmtPct(s.change_pct)}</td>
+                  <td className={`num ${cls}`}>{fmtPrice(price)}{q && <span className="live-dot" title="即時">·</span>}</td>
+                  <td className={`num ${cls}`}>{fmtChange(change)}</td>
+                  <td className={`num ${cls}`}>{fmtPct(pct)}</td>
                   <td className="num vol">{fmtVolume(s.volume)}</td>
                 </tr>
               )
