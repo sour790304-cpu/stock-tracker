@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10T13:49:35.849Z",
+  "updated_at": "2026-06-10T14:12:46.493Z",
   "trading_date": "2026-06-09",
   "errors": [],
   "stocks": [
@@ -313,6 +313,34 @@
         "signals": [
           "跌破季線(MA60)"
         ]
+      }
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "market": "TWSE",
+      "trading_date": "2026-06-09",
+      "open": 315,
+      "high": 327.5,
+      "low": 305,
+      "close": 321,
+      "change": 12,
+      "change_pct": 3.88,
+      "volume": 11574547,
+      "value": 3689853841,
+      "transactions": 13877,
+      "tags": [
+        "AI"
+      ],
+      "industry": "封裝測試(記憶體為主)",
+      "indicators": {
+        "ma5": 348,
+        "ma20": 268.93,
+        "ma60": 227.78,
+        "bias20": 19.36,
+        "vol_ratio": 0.36,
+        "trend": "多頭排列",
+        "signals": []
       }
     },
     {

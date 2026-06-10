@@ -25,8 +25,33 @@ export default {
     if (request.method === 'OPTIONS') return new Response(null, { headers: cors })
 
     const url = new URL(request.url)
+
+    // 分時/歷史走勢：?chart=2330.TW&range=1d&interval=1m (代理 Yahoo Finance，加 CORS)
+    const chart = url.searchParams.get('chart')
+    if (chart) {
+      const range = url.searchParams.get('range') || '1d'
+      const interval = url.searchParams.get('interval') || '1m'
+      const y = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(chart)}?range=${range}&interval=${interval}`
+      try {
+        const r = await fetch(y, { headers: { 'User-Agent': 'Mozilla/5.0' }, cf: { cacheTtl: 30 } })
+        if (!r.ok) return new Response(JSON.stringify({ error: `Yahoo HTTP ${r.status}` }), { status: 502, headers: cors })
+        const d = await r.json()
+        const res = d.chart?.result?.[0]
+        const ts = res?.timestamp || []
+        const close = res?.indicators?.quote?.[0]?.close || []
+        const points = ts.map((t, i) => ({ t, c: close[i] })).filter((p) => p.c != null)
+        return new Response(JSON.stringify({
+          symbol: chart,
+          prevClose: res?.meta?.chartPreviousClose ?? res?.meta?.previousClose ?? null,
+          points,
+        }), { headers: cors })
+      } catch (e) {
+        return new Response(JSON.stringify({ error: String(e?.message || e) }), { status: 500, headers: cors })
+      }
+    }
+
     const ex = url.searchParams.get('ex')
-    if (!ex) return new Response(JSON.stringify({ error: 'missing ex param' }), { status: 400, headers: cors })
+    if (!ex) return new Response(JSON.stringify({ error: 'missing ex or chart param' }), { status: 400, headers: cors })
 
     const api = `https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(ex)}&json=1&delay=0&_=${Date.now()}`
     try {

@@ -92,7 +92,7 @@ export default function App() {
       <main className="layout">
         <section className="col-main">
           <OverviewTable stocks={prices.stocks} selected={selected} onSelect={setSelected} live={mode === 'live' ? live : null} />
-          {current && <StockChart code={current.code} name={current.name} />}
+          {current && <StockChart code={current.code} name={current.name} market={current.market} proxy={proxy} />}
         </section>
         <aside className="col-side">
           <Commentary />
