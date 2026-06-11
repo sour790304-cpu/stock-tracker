@@ -22,6 +22,7 @@
     { "code": "3105",   "name": "穩懋",            "market": "TPEx", "industry": "砷化鎵射頻(衛星/通訊)",  "tags": ["衛星"],      "track": true },
     { "code": "3059",   "name": "華晶科",          "market": "TWSE", "industry": "光電/影像模組/無人機",   "tags": ["其他"],      "track": true },
     { "code": "3021",   "name": "鴻名",            "market": "TWSE", "industry": "連接器/線組",           "tags": ["其他"],      "track": true },
+    { "code": "2355",   "name": "敬鵬",            "market": "TWSE", "industry": "PCB(車用為主/低軌衛星)", "tags": ["衛星", "其他"], "track": true },
     { "code": "00403A", "name": "主動統一升級50",   "market": "TWSE", "industry": "主動式台股ETF",         "tags": ["ETF"], "type": "ETF", "track": true }
   ]
 }
