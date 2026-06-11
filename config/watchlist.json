@@ -1,7 +1,7 @@
 {
   "updated": "2026-06-09",
   "note": "追蹤清單設定檔。market 決定打哪個 API：TWSE=上市(證交所)，TPEx=上櫃(櫃買中心)。tags 為分類(可多選)：AI / 衛星(SpaceX低軌衛星) / 其他 / ETF。新增刪除直接改此檔。",
-  "tag_labels": { "AI": "AI 股", "衛星": "SpaceX/低軌衛星", "其他": "其他", "ETF": "ETF" },
+  "tag_labels": { "AI": "AI 股", "衛星": "SpaceX/低軌衛星", "泰國設廠": "泰國設廠", "其他": "其他", "ETF": "ETF" },
   "stocks": [
     { "code": "2330",   "name": "台積電",          "market": "TWSE", "industry": "半導體晶圓代工",        "tags": ["AI"],        "track": true },
     { "code": "3231",   "name": "緯創",            "market": "TWSE", "industry": "AI伺服器代工",          "tags": ["AI"],        "track": true },
@@ -15,14 +15,18 @@
     { "code": "3587",   "name": "閎康",            "market": "TPEx", "industry": "材料分析檢測",          "tags": ["AI"],        "track": true },
     { "code": "6261",   "name": "久元",            "market": "TPEx", "industry": "IC測試",              "tags": ["AI"],        "track": true },
     { "code": "6239",   "name": "力成",            "market": "TWSE", "industry": "封裝測試(記憶體為主)",   "tags": ["AI"],        "track": true },
-    { "code": "2367",   "name": "燿華",            "market": "TWSE", "industry": "PCB(車用)/低軌衛星板",   "tags": ["AI", "衛星"], "track": true },
+    { "code": "2308",   "name": "台達電",          "market": "TWSE", "industry": "電源/AI資料中心/散熱",   "tags": ["AI", "泰國設廠"], "track": true },
+    { "code": "4958",   "name": "臻鼎-KY",         "market": "TWSE", "industry": "PCB龍頭(伺服器/軟板)",  "tags": ["AI", "泰國設廠"], "track": true },
+    { "code": "2368",   "name": "金像電",          "market": "TWSE", "industry": "伺服器PCB(AI伺服器板)", "tags": ["AI", "泰國設廠"], "track": true },
+    { "code": "2367",   "name": "燿華",            "market": "TWSE", "industry": "PCB(車用)/低軌衛星板",   "tags": ["AI", "衛星", "泰國設廠"], "track": true },
     { "code": "3491",   "name": "昇達科",          "market": "TPEx", "industry": "衛星通訊微波元件",       "tags": ["衛星"],      "track": true },
     { "code": "2314",   "name": "台揚",            "market": "TWSE", "industry": "衛星地面接收設備",       "tags": ["衛星"],      "track": true },
     { "code": "6285",   "name": "啟碁",            "market": "TWSE", "industry": "網通/低軌衛星終端",      "tags": ["衛星"],      "track": true },
     { "code": "3105",   "name": "穩懋",            "market": "TPEx", "industry": "砷化鎵射頻(衛星/通訊)",  "tags": ["衛星"],      "track": true },
+    { "code": "2313",   "name": "華通",            "market": "TWSE", "industry": "PCB(低軌衛星板/HDI)",   "tags": ["衛星", "泰國設廠"], "track": true },
     { "code": "3059",   "name": "華晶科",          "market": "TWSE", "industry": "光電/影像模組/無人機",   "tags": ["其他"],      "track": true },
     { "code": "3021",   "name": "鴻名",            "market": "TWSE", "industry": "連接器/線組",           "tags": ["其他"],      "track": true },
-    { "code": "2355",   "name": "敬鵬",            "market": "TWSE", "industry": "PCB(車用為主/低軌衛星)", "tags": ["衛星", "其他"], "track": true },
+    { "code": "2355",   "name": "敬鵬",            "market": "TWSE", "industry": "PCB(車用為主/低軌衛星)", "tags": ["衛星", "其他", "泰國設廠"], "track": true },
     { "code": "00403A", "name": "主動統一升級50",   "market": "TWSE", "industry": "主動式台股ETF",         "tags": ["ETF"], "type": "ETF", "track": true }
   ]
 }

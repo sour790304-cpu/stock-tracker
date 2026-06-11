@@ -86,6 +86,7 @@ table.overview { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .tags-cell { white-space: nowrap; }
 .tag-AI { background: #e6f0ff; color: #2962ff; }
 .tag-衛星 { background: #efe6ff; color: #7b3ff2; }
+.tag-泰國設廠 { background: #e3f6ee; color: #0a8a5f; }
 .tag-其他 { background: #eef0f3; color: #666; }
 .tag-ETF { background: #fdeede; color: #c2700a; }
 

@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react'
 import { trendClass, fmtPct, fmtPrice, fmtChange, fmtVolume } from '../lib/format.js'
 
-const TAG_ORDER = ['AI', '衛星', '其他', 'ETF']
-const TAG_LABEL = { AI: 'AI 股', 衛星: 'SpaceX/衛星', 其他: '其他', ETF: 'ETF' }
+const TAG_ORDER = ['AI', '衛星', '泰國設廠', '其他', 'ETF']
+const TAG_LABEL = { AI: 'AI 股', 衛星: 'SpaceX/衛星', 泰國設廠: '🇹🇭 泰國設廠', 其他: '其他', ETF: 'ETF' }
 
 export default function OverviewTable({ stocks, selected, onSelect, live }) {
   const [filter, setFilter] = useState('全部')
