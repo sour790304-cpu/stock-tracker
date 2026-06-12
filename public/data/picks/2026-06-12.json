@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-12",
+  "generated_at": "2026-06-12T01:56:50.665Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "close": 125,
+      "change": 6.5,
+      "reason": "外資狂掃38萬張，半導體設備銷售創高帶動需求",
+      "catalyst": "外資連續買超、半導體設備銷售創歷史新高、衝漲停",
+      "risk": "客戶集中度風險、景氣循環波動",
+      "sentiment": "利多",
+      "news_title": "快訊／聯電、國巨*衝漲停！台股開高飆漲逾1600點 站回44K - 非凡新聞台",
+      "news_link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1yZnpuNW44SUNoeEt1dDh2MUdFTWpxa0VncU5YTDE5c3RyWWhkNFFmaDNtLXFId3M3eER1NHpJRlIweEpJRVMzVXk2NmUyX1dMOVNiSUVZVXh1TzRIRkNkMA?oc=5",
+      "news_source": "非凡新聞台"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "market": "TPEx",
+      "close": 251.5,
+      "change": 22.5,
+      "reason": "換手成功爆量鎖漲停，籌碼面反轉明確",
+      "catalyst": "爆量換手成功鎖漲停，籌碼面亮麗、技術面反轉",
+      "risk": "漲停可能為短期技術面反應、持續性待觀察",
+      "sentiment": "利多",
+      "news_title": "熱門股》換手成功 信昌電爆量鎖漲停 - 自由時報",
+      "news_link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE94WDUxN2dsUVVXWV9WX0YyalA4Yk1FU05uT1JMemIxY0hRRk9kZXBfZUZBR3NqX19lNmQ4ckNNaHVoUnREZGVMZGFIYWlFYVlqMXcxSk5JNno?oc=5",
+      "news_source": "自由時報"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "market": "TWSE",
+      "close": 156.5,
+      "change": 7.5,
+      "reason": "AI股帶動半導體反彈，一度漲幅達4.5%",
+      "catalyst": "AI推升半導體設備創高、AI鏈帶動晶片股回神、半導體洗牌下受惠",
+      "risk": "成本考驗、記憶體產業景氣循環風險",
+      "sentiment": "利多",
+      "news_title": "AI股帶動台股9日反彈走高 華邦電帶量上攻漲幅一度達4.5% - 蕃新聞",
+      "news_link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KblRWaWJ2eldabmhNQlJueGJmMmp6QV9ITG1sTEMwTV8yOVNWNUVCN25EMFRSZkkyNnh4bGZNNHd1NGZ4UElZdjFzRHpjUzZNZ2c?oc=5",
+      "news_source": "蕃新聞"
+    }
+  ]
+}
