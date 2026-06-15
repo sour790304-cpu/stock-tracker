@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-15",
+  "generated_at": "2026-06-15T02:00:04.647Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "market": "TWSE",
+      "close": 855,
+      "change": 0,
+      "reason": "被動元件龍頭漲停，法人買單破萬張，目標價上看1500元",
+      "catalyst": "被動元件族群強勢表態，多檔亮燈漲停，伴隨法人買盤回流",
+      "risk": "高檔獲利了結壓力，目標價達成後漲勢是否延續",
+      "sentiment": "利多",
+      "news_title": "被動元件、矽晶圓強勢出擊！「54檔漲停」齊發 國巨、創意、環球晶亮燈 - FTNN 新聞網",
+      "news_link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBna05VTjIwbmhHbVYyXzZBejVDRW0wclRCdFZnUmZTLXVZNTZOMnFQdHliU1M4aGxudjFXYm5lVWZHS2plVzlEZG5DWQ?oc=5",
+      "news_source": "FTNN 新聞網"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "market": "TPEx",
+      "close": 864,
+      "change": 78,
+      "reason": "矽晶圓龍頭漲停，先進製程需求帶動強勢表現",
+      "catalyst": "矽晶圓族群強勢表態漲停，先進製程需求浮現",
+      "risk": "原料成本波動風險，產能利用率變化影響獲利",
+      "sentiment": "利多",
+      "news_title": "被動元件、矽晶圓強勢出擊！「54檔漲停」齊發 國巨、創意、環球晶亮燈 - FTNN 新聞網",
+      "news_link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBna05VTjIwbmhHbVYyXzZBejVDRW0wclRCdFZnUmZTLXVZNTZOMnFQdHliU1M4aGxudjFXYm5lVWZHS2plVzlEZG5DWQ?oc=5",
+      "news_source": "FTNN 新聞網"
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "close": 4180,
+      "change": 95,
+      "reason": "狂漲175元，漲幅超過5%，AI題材與權值股齊漲",
+      "catalyst": "美伊協議激勵，AI、記憶體與太空題材成盤面焦點",
+      "risk": "手機市場需求不確定，競爭對手技術進度威脅",
+      "sentiment": "利多",
+      "news_title": "聯發科狂漲175元！台積電開高50元、權值股紅通通 台股早盤大漲1269點重返45000關卡 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMizgNBVV95cUxPem5feHA4MHJwSjRyTExLQVdTMVBhcVZMRHhmZmVyOVVySUt5SnM2SWl0WXVqdTZ3Wmc3bWZoeTQzekdnVVo0dlYxeV8ybnFOekZVczRiclBvdmMxUW90eURVSFJQSFJKazREaEtTRUM0QllxVnVNTk85LVVDNUkzUG1fT296TXpGSy1FVkNseHdSSFRfd3gtc3FYZ2FZclRXdHJjRDZJc3ZRRGMtWWk5U28tX05kNWdnNVVJaGFrU01zSUdKTUU3MDFPMlhoLWdHdl9SU1ZJSk5XalhDVHVyOS1EbnBYMTdrb1R4Z01oTXRHTnBnaUVDam0ybWVIM0g4S3lHLUptZnVsYkszcDh1MjdhYklOUGJnQTBNTkZWNndQWUZVbk1zb2NPS0txal9Kelc1VktQWUpBS0lSMFNGN1FmN3AxSmxOOWxwSmktQjltVU1UaTlYYV9Qd0VjdC0xeTJoYV9NZ3dZSThqUV9LdTdVZXlvWjMwX2pNWjJEN2hPQjNGRERWUUxrNjMxNzB2SEdLd3JoOGludTdsM2llU19qV0tGVXViTDdwXzJKdy0tNTNZSEVEMWlrR0NrcmVHYV9QOE1xZXkxYlA2VVE?oc=5",
+      "news_source": "Yahoo股市"
+    }
+  ]
+}
