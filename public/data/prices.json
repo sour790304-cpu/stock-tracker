@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T06:22:53.380Z",
+  "updated_at": "2026-06-15T06:40:01.325Z",
   "trading_date": "2026-06-12",
   "errors": [],
   "stocks": [
@@ -310,6 +310,34 @@
         "bias20": -4.99,
         "vol_ratio": 0.67,
         "trend": "均線糾結/盤整",
+        "signals": []
+      }
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "market": "TWSE",
+      "trading_date": "2026-06-12",
+      "open": 545,
+      "high": 545,
+      "low": 495.5,
+      "close": 497,
+      "change": -18,
+      "change_pct": -3.5,
+      "volume": 2174862,
+      "value": 1112901225,
+      "transactions": 5488,
+      "tags": [
+        "AI"
+      ],
+      "industry": "半導體檢測分析(材料/故障分析)",
+      "indicators": {
+        "ma5": 524.5,
+        "ma20": 658.58,
+        "ma60": 677.06,
+        "bias20": -24.53,
+        "vol_ratio": 1.05,
+        "trend": "空頭排列",
         "signals": []
       }
     },

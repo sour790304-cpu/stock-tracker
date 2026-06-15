@@ -14,6 +14,7 @@
     { "code": "4577",   "name": "達航科技",         "market": "TPEx", "industry": "PCB設備",             "tags": ["AI"],        "track": true },
     { "code": "3587",   "name": "閎康",            "market": "TPEx", "industry": "材料分析檢測",          "tags": ["AI"],        "track": true },
     { "code": "3289",   "name": "宜特",            "market": "TPEx", "industry": "半導體檢測分析/可靠度驗證", "tags": ["AI"],        "track": true },
+    { "code": "6830",   "name": "汎銓",            "market": "TWSE", "industry": "半導體檢測分析(材料/故障分析)", "tags": ["AI"],        "track": true },
     { "code": "6261",   "name": "久元",            "market": "TPEx", "industry": "IC測試",              "tags": ["AI"],        "track": true },
     { "code": "6239",   "name": "力成",            "market": "TWSE", "industry": "封裝測試(記憶體為主)",   "tags": ["AI"],        "track": true },
     { "code": "2308",   "name": "台達電",          "market": "TWSE", "industry": "電源/AI資料中心/散熱",   "tags": ["AI", "泰國設廠"], "track": true },
