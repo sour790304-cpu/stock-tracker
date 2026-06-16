@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-16",
+  "generated_at": "2026-06-16T02:07:24.852Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "market": "TWSE",
+      "close": 940,
+      "change": 85,
+      "reason": "股價觸千元關卡，展現強勢漲勢",
+      "catalyst": "國巨觸千元創新高，多日盤面受關注",
+      "risk": "高檔股價可能面臨獲利了結壓力",
+      "sentiment": "利多",
+      "news_title": "台股早盤開高震盪台積電一度跌20元國巨觸千元- 證券 - 工商時報",
+      "news_link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9yakladFQ3Rlp2aHBZR0R0eTBqREV2RzhHWDIyd2t6dmRINDBiUjE2U0tEM3dUZ1pzT3duRUZoZFZPelFVRmdhbjkwOXYxVFB4MGUxVFRmRzZGZGkyU0FJ?oc=5",
+      "news_source": "工商時報"
+    },
+    {
+      "code": "2460",
+      "name": "建通",
+      "market": "TWSE",
+      "close": 34.7,
+      "change": 3.15,
+      "reason": "AI電力及散熱銅材出貨看旺，營收雙增並連拔2根漲停",
+      "catalyst": "營收雙增報喜、水冷題材發威，布局光模組散熱應用",
+      "risk": "散熱產業競爭激烈，後續需求能否持續成長存疑",
+      "sentiment": "利多",
+      "news_title": "建通看好AI電力及散熱銅材出貨帶旺營運 布局光模組散熱應用 - news.cnyes.com",
+      "news_link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41TUx5Q1Jxck8yZklkYUl6R0luZDFidEJ4SUpvZi1SVWdSMTlMWkFHVkRJX0RiTTVCUWcxT1I1ZS1jVzNoV2xzLWhBZGxKWkU?oc=5",
+      "news_source": "news.cnyes.com"
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "close": 4470,
+      "change": 290,
+      "reason": "AI與半導體族群領軍，資金重返布局",
+      "catalyst": "聯發科勁揚帶動台股大漲近千點，4家主動式ETF強攻",
+      "risk": "美股波動影響台股半導體類股表現",
+      "sentiment": "利多",
+      "news_title": "大立光、聯發科勁揚 台股大漲近千點重返44000點 - MSN",
+      "news_link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNMFBGNFY1Y29JaVhZbzRtTkN1aUo1STdTb1NSX0VLX3V6cFdob2F0Tm9tNWpfaktTMHNnTjJHb3loZlRkczZpSmtoZkpwT0NIMkpwWnNOemREYXFWeWlSbTEzTHpJcUJ1Z2RwZ1VPVHdzV2VZeDVtdHFES2N3V0E1YnQwVzFKcXQxSU9Ub2ZFMzVHbmpQNENnRk1CbjNiREhUcnhOdUl1VTdsellWTVdGTTM0dlo0TTduUjZUeHZPOVdRSnlHMmkwczZmNnFfaVlxczluZ3NJTjFsVTMzZEplZlkxQ0ttQjZSMGRZaFpweVJhQjY3cWRJZnR5THEzaVhqMTFVNWo0bF9nMGlXMUhSdzdGQ3lzQTJmTmItaTdzOHRsd3N6VURrUDNjdnladFI2dE16MTNoMjhqaElPaDhXeHJxYlR5Zw?oc=5",
+      "news_source": "MSN"
+    }
+  ]
+}
