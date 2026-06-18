@@ -1064,6 +1064,15 @@
       "close": 514,
       "change_pct": 3.42,
       "volume": 1669476
+    },
+    {
+      "date": "2026-06-17",
+      "open": 500,
+      "high": 520,
+      "low": 490.5,
+      "close": 513,
+      "change_pct": 2.6,
+      "volume": 596204
     }
   ]
 }
