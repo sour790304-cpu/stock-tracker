@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-19",
+  "generated_at": "2026-06-19T02:16:45.472Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2409",
+      "name": "友達",
+      "market": "TWSE",
+      "close": 28.15,
+      "change": 1.9,
+      "reason": "三大法人買超加持，面板指標股登強勢股王",
+      "catalyst": "三大法人18日買超友達，與記憶體股同登強勢股王榜單",
+      "risk": "面板產業景氣循環風險，競爭激烈",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人18日買超股：友達、永豐金、台塑 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVW94RFk3VlVoN3JLdUVDam1UQmhJYmRNVUQ3bEljaUpCaVhydXZWU0hfOENjNzdUdGtlaDZfWW9yemdfUXVsY08wcVV3aDMxUWxWeFYxRi1QSS1zN01jQWZ5SXpQbWd6Y1psVHlCMDF3el9zaFl4UHZKVE04Mk05c0ZyWjFIcFc5?oc=5",
+      "news_source": "富聯網"
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "market": "TWSE",
+      "close": 39.8,
+      "change": 3.45,
+      "reason": "三大法人買超且合併效益發酵，連六漲近40元",
+      "catalyst": "三大法人18日買超，合併效益持續發酵股價創新高",
+      "risk": "金融股受利率政策影響波動",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人18日買超股：友達、永豐金、台塑 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVW94RFk3VlVoN3JLdUVDam1UQmhJYmRNVUQ3bEljaUpCaVhydXZWU0hfOENjNzdUdGtlaDZfWW9yemdfUXVsY08wcVV3aDMxUWxWeFYxRi1QSS1zN01jQWZ5SXpQbWd6Y1psVHlCMDF3el9zaFl4UHZKVE04Mk05c0ZyWjFIcFc5?oc=5",
+      "news_source": "富聯網"
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "market": "TWSE",
+      "close": 19.1,
+      "change": 0.35,
+      "reason": "外資狂掃近32萬張，三大法人買超",
+      "catalyst": "外資回頭買超211億元狂掃中鋼近32萬張，三大法人同步買超",
+      "risk": "鋼鐵景氣循環與原料成本波動",
+      "sentiment": "利多",
+      "news_title": "《台北股市》外資18日買超股：中鋼、台塑、聯電 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZlZZV0NGcm4wZUxOQXotM1JWVUdlRnExbTc0UkhvenVaeVBONWVEckJZYzkxRGlQRTJlSWhnVWZvZ09wYXAtamhxUVJ2eHk1alU2RFJfMU5WM1gxWWVXN29qTU9DS1Q0QVdFd245SDRaTFFqS0FMQXo0UEcydVlvYWRMb1M5aGx2?oc=5",
+      "news_source": "富聯網"
+    }
+  ]
+}
