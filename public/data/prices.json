@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-06-19T03:51:53.413Z",
-  "trading_date": "2026-06-18",
-  "errors": [],
+  "updated_at": "2026-06-22T18:05:43.848Z",
+  "trading_date": "2026-06-22",
+  "errors": [
+    "TWSE: 抓取失敗(TWSE STOCK_DAY_ALL): Unexpected token '<', \"<html>\n<he\"... is not valid JSON",
+    "2330(台積電) 本次未取得，沿用前一日",
+    "3231(緯創) 本次未取得，沿用前一日",
+    "2356(英業達) 本次未取得，沿用前一日",
+    "6669(緯穎) 本次未取得，沿用前一日",
+    "2382(廣達) 本次未取得，沿用前一日",
+    "3017(奇鋐) 本次未取得，沿用前一日",
+    "3443(創意) 本次未取得，沿用前一日",
+    "6830(汎銓) 本次未取得，沿用前一日",
+    "6239(力成) 本次未取得，沿用前一日",
+    "2308(台達電) 本次未取得，沿用前一日",
+    "4958(臻鼎-KY) 本次未取得，沿用前一日",
+    "2368(金像電) 本次未取得，沿用前一日",
+    "2367(燿華) 本次未取得，沿用前一日",
+    "2314(台揚) 本次未取得，沿用前一日",
+    "6285(啟碁) 本次未取得，沿用前一日",
+    "2313(華通) 本次未取得，沿用前一日",
+    "3059(華晶科) 本次未取得，沿用前一日",
+    "3021(鴻名) 本次未取得，沿用前一日",
+    "2355(敬鵬) 本次未取得，沿用前一日",
+    "00403A(主動統一升級50) 本次未取得，沿用前一日"
+  ],
   "stocks": [
     {
       "code": "2330",
@@ -29,7 +51,8 @@
         "vol_ratio": 1.21,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3231",
@@ -57,7 +80,8 @@
         "vol_ratio": 0.58,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "2356",
@@ -85,7 +109,8 @@
         "vol_ratio": 0.33,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "6669",
@@ -113,7 +138,8 @@
         "vol_ratio": 0.87,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "2382",
@@ -141,7 +167,8 @@
         "vol_ratio": 0.4,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3017",
@@ -169,7 +196,8 @@
         "vol_ratio": 0.67,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3443",
@@ -197,32 +225,33 @@
         "vol_ratio": 1.74,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "5443",
       "name": "均豪",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 105,
-      "high": 108,
-      "low": 105,
-      "close": 107,
-      "change": 2.5,
-      "change_pct": 2.39,
-      "volume": 1264789,
-      "value": 135229959,
-      "transactions": 1452,
+      "trading_date": "2026-06-22",
+      "open": 109.5,
+      "high": 112.5,
+      "low": 108.5,
+      "close": 111,
+      "change": 4,
+      "change_pct": 3.74,
+      "volume": 2027229,
+      "value": 225120058,
+      "transactions": 2215,
       "tags": [
         "AI"
       ],
       "industry": "半導體/先進封裝設備",
       "indicators": {
-        "ma5": 103.7,
-        "ma20": 115.55,
-        "ma60": 115.87,
-        "bias20": -7.4,
-        "vol_ratio": 0.28,
+        "ma5": 105.8,
+        "ma20": 115.23,
+        "ma60": 116.02,
+        "bias20": -3.67,
+        "vol_ratio": 0.46,
         "trend": "空頭排列",
         "signals": []
       }
@@ -231,26 +260,26 @@
       "code": "4577",
       "name": "達航科技",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 87.2,
-      "high": 88.8,
-      "low": 85.5,
-      "close": 87.4,
-      "change": 0.6,
-      "change_pct": 0.69,
-      "volume": 385303,
-      "value": 33716538,
-      "transactions": 476,
+      "trading_date": "2026-06-22",
+      "open": 89.2,
+      "high": 96.1,
+      "low": 87.6,
+      "close": 96.1,
+      "change": 8.7,
+      "change_pct": 9.95,
+      "volume": 953899,
+      "value": 90286450,
+      "transactions": 721,
       "tags": [
         "AI"
       ],
       "industry": "PCB設備",
       "indicators": {
-        "ma5": 88.38,
-        "ma20": 106.04,
-        "ma60": 125.83,
-        "bias20": -17.58,
-        "vol_ratio": 0.35,
+        "ma5": 89.88,
+        "ma20": 104.75,
+        "ma60": 125.87,
+        "bias20": -8.26,
+        "vol_ratio": 0.87,
         "trend": "空頭排列",
         "signals": []
       }
@@ -259,56 +288,61 @@
       "code": "3587",
       "name": "閎康",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 293.5,
-      "high": 307,
-      "low": 291,
-      "close": 304,
-      "change": 14.5,
-      "change_pct": 5.01,
-      "volume": 1072744,
-      "value": 323587262,
-      "transactions": 1805,
+      "trading_date": "2026-06-22",
+      "open": 324,
+      "high": 328,
+      "low": 320,
+      "close": 323,
+      "change": 19,
+      "change_pct": 6.25,
+      "volume": 2077054,
+      "value": 671512845,
+      "transactions": 3110,
       "tags": [
         "AI"
       ],
       "industry": "材料分析檢測",
       "indicators": {
-        "ma5": 292.6,
-        "ma20": 312.5,
-        "ma60": 309.69,
-        "bias20": -2.72,
-        "vol_ratio": 0.85,
+        "ma5": 299.8,
+        "ma20": 312.4,
+        "ma60": 310.98,
+        "bias20": 3.39,
+        "vol_ratio": 1.64,
         "trend": "均線糾結/盤整",
-        "signals": []
+        "signals": [
+          "站上月線(MA20)",
+          "站上季線(MA60)"
+        ]
       }
     },
     {
       "code": "3289",
       "name": "宜特",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 168.5,
-      "high": 175,
-      "low": 168.5,
-      "close": 174.5,
-      "change": 5,
-      "change_pct": 2.95,
-      "volume": 1668601,
-      "value": 288728562,
-      "transactions": 1858,
+      "trading_date": "2026-06-22",
+      "open": 176.5,
+      "high": 179.5,
+      "low": 174,
+      "close": 179,
+      "change": 4.5,
+      "change_pct": 2.58,
+      "volume": 4023777,
+      "value": 712204561,
+      "transactions": 3826,
       "tags": [
         "AI"
       ],
       "industry": "半導體檢測分析/可靠度驗證",
       "indicators": {
-        "ma5": 164.9,
-        "ma20": 169.13,
-        "ma60": 168.56,
-        "bias20": 3.18,
-        "vol_ratio": 0.59,
-        "trend": "均線糾結/盤整",
-        "signals": []
+        "ma5": 170.3,
+        "ma20": 169.9,
+        "ma60": 169.08,
+        "bias20": 5.36,
+        "vol_ratio": 1.41,
+        "trend": "多頭排列",
+        "signals": [
+          "黃金交叉(MA5上穿MA20)"
+        ]
       }
     },
     {
@@ -337,36 +371,35 @@
         "vol_ratio": 0.43,
         "trend": "空頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "6261",
       "name": "久元",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 94.9,
-      "high": 98.8,
-      "low": 94.8,
-      "close": 98.8,
-      "change": 4.4,
-      "change_pct": 4.66,
-      "volume": 1267439,
-      "value": 122993249,
-      "transactions": 1645,
+      "trading_date": "2026-06-22",
+      "open": 100.5,
+      "high": 104.5,
+      "low": 98.9,
+      "close": 101,
+      "change": 2.2,
+      "change_pct": 2.23,
+      "volume": 2015316,
+      "value": 204129087,
+      "transactions": 1991,
       "tags": [
         "AI"
       ],
       "industry": "IC測試",
       "indicators": {
-        "ma5": 96.66,
-        "ma20": 108.3,
-        "ma60": 98.18,
-        "bias20": -8.77,
-        "vol_ratio": 0.32,
+        "ma5": 97.96,
+        "ma20": 107.7,
+        "ma60": 98.74,
+        "bias20": -6.22,
+        "vol_ratio": 0.52,
         "trend": "均線糾結/盤整",
-        "signals": [
-          "站上季線(MA60)"
-        ]
+        "signals": []
       }
     },
     {
@@ -395,7 +428,8 @@
         "vol_ratio": 1.75,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "2308",
@@ -424,7 +458,8 @@
         "vol_ratio": 1.13,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "4958",
@@ -453,7 +488,8 @@
         "vol_ratio": 1.84,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "2368",
@@ -485,7 +521,8 @@
           "死亡交叉(MA5下穿MA20)",
           "跌破月線(MA20)"
         ]
-      }
+      },
+      "stale": true
     },
     {
       "code": "2367",
@@ -515,32 +552,33 @@
         "vol_ratio": 0.39,
         "trend": "空頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3491",
       "name": "昇達科",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 1560,
-      "high": 1575,
-      "low": 1520,
-      "close": 1560,
-      "change": 10,
-      "change_pct": 0.65,
-      "volume": 1662082,
-      "value": 2584657325,
-      "transactions": 10409,
+      "trading_date": "2026-06-22",
+      "open": 1555,
+      "high": 1555,
+      "low": 1470,
+      "close": 1470,
+      "change": -90,
+      "change_pct": -5.77,
+      "volume": 3158985,
+      "value": 4719111795,
+      "transactions": 22353,
       "tags": [
         "衛星"
       ],
       "industry": "衛星通訊微波元件",
       "indicators": {
-        "ma5": 1611,
-        "ma20": 1882.5,
-        "ma60": 1724.75,
-        "bias20": -17.13,
-        "vol_ratio": 0.84,
+        "ma5": 1569,
+        "ma20": 1863.5,
+        "ma60": 1727.25,
+        "bias20": -21.12,
+        "vol_ratio": 1.64,
         "trend": "均線糾結/盤整",
         "signals": []
       }
@@ -573,7 +611,8 @@
         "signals": [
           "跌破季線(MA60)"
         ]
-      }
+      },
+      "stale": true
     },
     {
       "code": "6285",
@@ -601,35 +640,36 @@
         "vol_ratio": 0.71,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3105",
       "name": "穩懋",
       "market": "TPEx",
-      "trading_date": "2026-06-18",
-      "open": 522,
-      "high": 557,
-      "low": 521,
-      "close": 528,
-      "change": 9,
-      "change_pct": 1.73,
-      "volume": 40139349,
-      "value": 21613642453,
-      "transactions": 47240,
+      "trading_date": "2026-06-22",
+      "open": 545,
+      "high": 550,
+      "low": 522,
+      "close": 541,
+      "change": 13,
+      "change_pct": 2.46,
+      "volume": 28073339,
+      "value": 15120531881,
+      "transactions": 31254,
       "tags": [
         "衛星"
       ],
       "industry": "砷化鎵射頻(衛星/通訊)",
       "indicators": {
-        "ma5": 503.7,
-        "ma20": 510.68,
-        "ma60": 481.78,
-        "bias20": 3.39,
-        "vol_ratio": 1.35,
-        "trend": "均線糾結/盤整",
+        "ma5": 515.6,
+        "ma20": 513.58,
+        "ma60": 485.54,
+        "bias20": 5.34,
+        "vol_ratio": 0.93,
+        "trend": "多頭排列",
         "signals": [
-          "站上月線(MA20)"
+          "黃金交叉(MA5上穿MA20)"
         ]
       }
     },
@@ -660,7 +700,8 @@
         "vol_ratio": 0.53,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3059",
@@ -688,7 +729,8 @@
         "vol_ratio": 0.89,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "3021",
@@ -716,7 +758,8 @@
         "vol_ratio": 1.57,
         "trend": "多頭排列",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "2355",
@@ -746,7 +789,8 @@
         "vol_ratio": 0.31,
         "trend": "均線糾結/盤整",
         "signals": []
-      }
+      },
+      "stale": true
     },
     {
       "code": "00403A",
@@ -777,7 +821,8 @@
         "signals": [
           "黃金交叉(MA5上穿MA20)"
         ]
-      }
+      },
+      "stale": true
     }
   ]
 }
