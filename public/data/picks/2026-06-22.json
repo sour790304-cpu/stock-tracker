@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-22",
+  "generated_at": "2026-06-22T02:02:04.517Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "close": 145.5,
+      "change": 5.5,
+      "reason": "開盤漲停160元，受台積電28奈米減產轉單潮帶動",
+      "catalyst": "台積電28奈米減產逾25%有望迎轉單潮，聯電為直接受惠廠商",
+      "risk": "轉單效益能否持續兌現存在不確定性",
+      "sentiment": "利多",
+      "news_title": "台股首破4萬7！台積電衝2495元天價、聯電160元漲停 漲逾1200點寫新猷 - 民報",
+      "news_link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5NYWJ0T1AzUTZtekZmWHNSUnBIQUNyeWd0MXI4ZDduRVd2RDJQOFA0TlhOcjVpNktlV0tLV1ZIQnhnQlh3S2NlUGdNLWRSSDMwVS1pTEVfY2dWTWluNk5kcTNaR2s?oc=5",
+      "news_source": "民報"
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "market": "TWSE",
+      "close": 308.5,
+      "change": 28,
+      "reason": "營收連創新高，強勢亮燈漲停",
+      "catalyst": "營收連創新高帶動股價表現",
+      "risk": "高檔後續能否持續成長存在壓力",
+      "sentiment": "利多",
+      "news_title": "營收連創新高帶動！京元電子(2449)強勢亮燈漲停！ - CMoney投資網誌",
+      "news_link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBwVDVvd2IweWtSSWphX1VuR3ZCRGRDODdQYlk5YTM3c0ZRUk42SG9IMHVNZ0JmOUVFSjliMG5QTWthWHpzRmlNWkdCMmtDZC1RM3dJZ2VOSEw2ZFhXeXo1MFcwcWlGWHI1WGpfS1pqaTNtYlQ5NFFTMWU4MlFZZw?oc=5",
+      "news_source": "CMoney投資網誌"
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "market": "TWSE",
+      "close": 613,
+      "change": 18,
+      "reason": "早盤噴漲8%，與聯電、南亞同步亮燈漲停",
+      "catalyst": "半導體供應鏈景氣回暖，法人買盤敲進",
+      "risk": "高檔獲利了結壓力",
+      "sentiment": "利多",
+      "news_title": "日月光噴8%、聯發科開低走高！台積電開高45元 台股早盤暴漲995點站上47000大關 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMivgNBVV95cUxQallQYkcxZGJrem5EYU5pNDlxNUpnYnVocmpPQWRKSFBxbV84ZXpPbWlUSTVySEkzdlV1UERUbGhwN1VlSE1CbGtNcjdka0thSVVnTG1vZmwtd1YzSWZlV1hHRDBKMWR2T2o2OGdPdVZNbTZpTy1kNlEzeVFOVGhhWDFkYkJzbzdhUmJNU3FFMDBrR2toNkZyVWdETzJNZk5OVW1GMElheHRPV0RoSy1EMjBsaEQwSnF5UWxPVG9qZ0lPOGJLOTNSbzJlNlFvQVg2MndKWGpEXy1Qd3pIdGhMNThIUW01MkF0bGFleWJVd2dmVENjV1hydmZpR2luUXpGa1BCd2p0a0VNd0tXbDBTZEtyN0luLVB3V3d3UlZibzNXZ2hWNGo3SHo2Q05nUVo3d3BQTjZPZWNkOXFTNkwyamRlcVE5b0x3SlpTUzNDM042em91dUNxa1hHcDZQS2x5SGczUGltbnM5NVdGNTh2X19wZnRkZVNkMUdwb3k1UTdONWhfVU5fLTFzY3l2a1hYa2dNaW03emtTaDVIc1lVZG1mR2tYSlo1UXR0ejVQV25FcUphdGhoYl9mcmFRUQ?oc=5",
+      "news_source": "Yahoo股市"
+    }
+  ]
+}
