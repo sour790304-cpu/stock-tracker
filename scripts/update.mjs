@@ -118,10 +118,15 @@ async function main() {
   const tradingDate = mostCommonDate(freshStocks)
   console.log(`最新交易日：${tradingDate}（新資料 ${freshStocks.length} 檔${missing.length ? `、沿用 ${missing.length} 檔` : ''}）`)
 
-  // 偵測無新資料
-  if (!FORCE && prevPrices?.trading_date && tradingDate && tradingDate <= prevPrices.trading_date) {
+  // 偵測無新資料：同交易日且既有資料「沒有 stale 殘留」才略過；
+  // 若既有有 stale(前次某來源失敗沿用舊值),即使同交易日也重寫，以本次新資料修復。
+  const prevHasStale = (prevPrices?.stocks || []).some((s) => s.stale)
+  if (!FORCE && !prevHasStale && prevPrices?.trading_date && tradingDate && tradingDate <= prevPrices.trading_date) {
     console.log(`資料未更新(既有 ${prevPrices.trading_date} >= 抓取 ${tradingDate})，略過。加 --force 可強制覆寫。`)
     return
+  }
+  if (prevHasStale && tradingDate && tradingDate <= prevPrices.trading_date) {
+    console.log(`既有資料含 stale 殘留，同交易日仍重寫以修復。`)
   }
 
   // 載入歷史(供評論判斷量比/新高低)
