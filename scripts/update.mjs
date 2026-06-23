@@ -24,7 +24,7 @@ try {
     if (val) process.env[m[1]] = val // 只在 .env 有實值時覆蓋
   }
 } catch { /* 無 .env 就略過 */ }
-import { fetchTWSE, fetchTPEx } from './lib/markets.mjs'
+import { fetchTWSE, fetchTPEx, fetchYahooDaily } from './lib/markets.mjs'
 import { buildRuleCommentary } from './commentary/ruleBased.mjs'
 import { buildAICommentary } from './commentary/ai.mjs'
 import { summarize } from '../src/lib/indicators.js'
@@ -60,6 +60,21 @@ async function main() {
     console.error('兩個來源皆無資料，保留既有檔案，結束。')
     process.exitCode = 1
     return
+  }
+
+  // Yahoo 備援：官方 API(STOCK_DAY_ALL/TPEx)可能從 GitHub 機房 IP 被封鎖而失敗，
+  // 對「本次沒抓到」的 watchlist 個股改用 Yahoo 日線補抓「當日真實收盤」(優先於沿用前一日)。
+  {
+    const got = new Set(fetched.map((s) => s.code))
+    const need = tracked.filter((t) => !got.has(t.code))
+    if (need.length) {
+      console.log(`  官方來源缺 ${need.length} 檔，改用 Yahoo 日線備援…`)
+      const yh = await fetchYahooDaily(need)
+      if (yh.length) {
+        fetched.push(...yh)
+        console.log(`  Yahoo 補到 ${yh.length} 檔`)
+      }
+    }
   }
 
   // 把 watchlist 的分類資訊(tags/industry)併入每筆，供前端篩選
