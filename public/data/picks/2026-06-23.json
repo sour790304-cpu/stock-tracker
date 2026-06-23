@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-23",
+  "generated_at": "2026-06-23T01:30:41.144Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "close": 160,
+      "change": 14.5,
+      "reason": "連續漲停板，爆量上漲，技術面強勢",
+      "catalyst": "聯電爆量觸漲停，連續漲停引發市場關注",
+      "risk": "短期漲幅過大，高檔震盪風險",
+      "sentiment": "利多",
+      "news_title": "台積電2,535元再創天價！聯電爆量觸漲停 台股早盤再刷新高挺進48K | 市場焦點 | 證券 - 經濟日報",
+      "news_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlejVORkVaRklHcHJ1LTdSYmVieEtqRlBIOVR3Tk9KY3pmdGMtWlZlNmJpOVpqYng4d3RZbUJObGdpQ0dPWERyb2pMZ1daVEZyMUt0T3VDaC0xNFdhZXVEMGRJTzZHMWZHel9oY2hEeVhraWtzUkhV?oc=5",
+      "news_source": "經濟日報"
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "market": "TWSE",
+      "close": 4465,
+      "change": 75,
+      "reason": "噴漲6%，AI需求強勢推升，半導體領軍個股",
+      "catalyst": "聯發科噴漲6%，受惠AI需求強勁與半導體供應鏈齊揚",
+      "risk": "高檔個股，獲利了結風險",
+      "sentiment": "利多",
+      "news_title": "聯發科噴6%、日月光漲3%！台積電開平走高 台股早盤揚升358點攻上48000大關 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMipANBVV95cUxNQUVucy1HbHdnQzBwVjBMcVBkWVNZS1l2czctT1lOazlVVFc0RlNCbzBFUlhLX2dubHlXS2ktRU5XbkxfMDFfczVlY251c1h4Tklmb0haOTk5dTVjYzJjbzYyMUl0dFBUaE1UZTZkaVZDWm84WmcxRWxHSmJVQ1lQLXBqZjFyT0VVWWItXzhDYmc2ZkJZcEVDamluV0VtTVpQQ1dvVEkxa3E1dmpwUWdyQzZQNEsyM1p1a3ItMFg3Z19mcy1kYUl3N1R0SWVjLTFmOFpKN3lzV2NmQmczdFAxRExBMXE0dS1mNzlydGw5QzNhWjZMLUpmcGJnR0JkY05KRE1JSjc3NVRfT1Nla2wxRlVsN3ZHcEQ4Z2F4blNTcXpqN0J0bzRoUVdEdWVnTXdXbFdnZHdnZTM4SVhpMGh4VG5UMlBIRjJkMm43bjdLdmVFQk4yZ2pPNUJqaXF1V1RibWxJcXFPT0RIdzFDVVhEOFh2UXdHd2dpcFBVNVJ1SVJqRDl0WUdEOGFvMmZiWGVkeFpBMVl4czNfYkVxSzJTTzNXQ08?oc=5",
+      "news_source": "Yahoo股市"
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "market": "TWSE",
+      "close": 674,
+      "change": 61,
+      "reason": "漲3%，市值衝破3兆元，與台積電功率半導體共同上漲",
+      "catalyst": "日月光市值衝破3兆元，漲3%，受惠功率半導體需求強勁",
+      "risk": "大型權值股高檔震盪風險",
+      "sentiment": "利多",
+      "news_title": "聯發科噴6%、日月光漲3%！台積電開平走高 台股早盤揚升358點攻上48000大關 - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMipANBVV95cUxNQUVucy1HbHdnQzBwVjBMcVBkWVNZS1l2czctT1lOazlVVFc0RlNCbzBFUlhLX2dubHlXS2ktRU5XbkxfMDFfczVlY251c1h4Tklmb0haOTk5dTVjYzJjbzYyMUl0dFBUaE1UZTZkaVZDWm84WmcxRWxHSmJVQ1lQLXBqZjFyT0VVWWItXzhDYmc2ZkJZcEVDamluV0VtTVpQQ1dvVEkxa3E1dmpwUWdyQzZQNEsyM1p1a3ItMFg3Z19mcy1kYUl3N1R0SWVjLTFmOFpKN3lzV2NmQmczdFAxRExBMXE0dS1mNzlydGw5QzNhWjZMLUpmcGJnR0JkY05KRE1JSjc3NVRfT1Nla2wxRlVsN3ZHcEQ4Z2F4blNTcXpqN0J0bzRoUVdEdWVnTXdXbFdnZHdnZTM4SVhpMGh4VG5UMlBIRjJkMm43bjdLdmVFQk4yZ2pPNUJqaXF1V1RibWxJcXFPT0RIdzFDVVhEOFh2UXdHd2dpcFBVNVJ1SVJqRDl0WUdEOGFvMmZiWGVkeFpBMVl4czNfYkVxSzJTTzNXQ08?oc=5",
+      "news_source": "Yahoo股市"
+    }
+  ]
+}
