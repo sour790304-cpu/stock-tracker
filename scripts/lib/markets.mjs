@@ -1,7 +1,7 @@
 // TWSE(上市) 與 TPEx(上櫃) 資料抓取與正規化。
 // 兩個來源欄位不同，各寫一個 parser，輸出統一結構(見 SPEC 第 6 節)。
 
-import { cleanNumber, rocToISO, changePct, fetchJSON } from './util.mjs'
+import { cleanNumber, rocToISO, changePct, fetchJSON, sleep } from './util.mjs'
 
 const TWSE_ALL = 'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'
 const TPEX_ALL = 'https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes'
@@ -88,6 +88,57 @@ export async function fetchTPEx(codes) {
     .filter((r) => codes.has(r.SecuritiesCompanyCode))
     .map(normalizeTPEx)
     .filter((s) => s.close !== null)
+}
+
+/**
+ * Yahoo Finance 日線備援：當證交所/櫃買 OpenAPI 從某些環境(如 GitHub Actions 機房 IP)
+ * 被封鎖時，改用 Yahoo 取得個股最新「已收盤」日線。上市 .TW、上櫃 .TWO。
+ * @param {Array<{code,name,market}>} stocks 要補抓的個股
+ * @returns {Promise<Array>} 正規化後的 StockQuote(僅成功者)
+ */
+export async function fetchYahooDaily(stocks) {
+  const out = []
+  const toDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-CA', { timeZone: 'Asia/Taipei' })
+  for (const s of stocks) {
+    const sym = `${s.code}${s.market === 'TWSE' ? '.TW' : '.TWO'}`
+    try {
+      const d = await fetchJSON(
+        `https://query1.finance.yahoo.com/v8/finance/chart/${sym}?range=5d&interval=1d`,
+        { label: `Yahoo ${sym}`, timeoutMs: 30000 }
+      )
+      const r = d?.chart?.result?.[0]
+      const q = r?.indicators?.quote?.[0]
+      const ts = r?.timestamp
+      if (!r || !q || !ts?.length) continue
+      // 取最後一個有收盤價的交易日
+      let i = ts.length - 1
+      while (i >= 0 && (q.close?.[i] == null)) i--
+      if (i < 0) continue
+      const close = Math.round(q.close[i] * 100) / 100
+      // 前一交易日收盤(算漲跌)
+      let pj = i - 1
+      while (pj >= 0 && q.close?.[pj] == null) pj--
+      const prev = pj >= 0 ? q.close[pj] : (r.meta?.chartPreviousClose ?? null)
+      const change = prev != null ? Math.round((close - prev) * 100) / 100 : null
+      out.push({
+        code: s.code, name: s.name, market: s.market,
+        trading_date: toDate(ts[i]),
+        open: q.open?.[i] != null ? Math.round(q.open[i] * 100) / 100 : null,
+        high: q.high?.[i] != null ? Math.round(q.high[i] * 100) / 100 : null,
+        low: q.low?.[i] != null ? Math.round(q.low[i] * 100) / 100 : null,
+        close,
+        change,
+        change_pct: change != null && prev ? Math.round((change / prev) * 10000) / 100 : null,
+        volume: q.volume?.[i] ?? null,
+        value: null, transactions: null,
+        source: 'yahoo',
+      })
+    } catch (e) {
+      console.warn(`  [yahoo] ${sym} 失敗: ${e.message}`)
+    }
+    await sleep(300)
+  }
+  return out
 }
 
 /**
