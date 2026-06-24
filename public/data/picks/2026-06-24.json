@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-24",
+  "generated_at": "2026-06-24T01:25:22.989Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "5425",
+      "name": "台半",
+      "market": "TPEx",
+      "close": 134,
+      "change": 4,
+      "reason": "功率半導體板塊強勢抗跌，台半寫下新天價，顯示產業基本面支撐",
+      "catalyst": "功率半導體點火，台半創新天價；在全球半導體回檔中逆勢上漲",
+      "risk": "整體半導體股估值疑慮未消，後續可能面臨連帶回檔壓力",
+      "sentiment": "利多",
+      "news_title": "【0624台股盤前】韓股熔斷影響台股創高後急墜640 點，功率半導體與光通訊強勢抗，【RS動能排行】:富鼎8261、鼎元2426 、台半5425｜豐雲學堂2026 年 06 月 - sinotrade.com.tw",
+      "news_link": "https://news.google.com/rss/articles/CBMiiwVBVV95cUxQWm5VdjVYTWNfZm1uNlVVZ29UTFpOS1RXUGpOYzJsdExJTDYwTVFuS3VCaGVGMENzS3hnaDJaYVBDaVdzUnRRaXVvR2VKS0Q3QlZHVTJDcG9ZRmVFZGJwMEtYM0pjZkVwMTVlQ25aZGJPVWFuWkZBV3ZoSFk4MUF6aWxJZ0QxMEhFdVlVcFNVZWZFN1lWMDh1Wmo2TlZabGNRdFQ2bnhjTkwwLUlpck9OZXJrQ05YNy15Mk5tVnJRQjBia0xMZHdqMEJwMXpjMHFZcVFoYTh0cXI2bXg5SGpkaS1iX3JTUXYtQ3NRYnhEbFl0Tjg0YjY3LXlwekltdDZGdGhHYVBuVGhuYnBVRmJXSEdYYThlamdMcmVtTnpDZFN2eGpnVnZoRFVTMGhBdzJiMnd0Vm15WmwxTzVud1JVUkxRcTFxZXZnZE1OUEk1VFNLb1hSQ1VDbmlkeGZVSVJEdElUX294cTl0bWNFakFWUmJMNEc4eGRDdWR3NjYwdmRhRWY1eWJUNTQ4Y1ZGaHFNVHBVSF84Sk8xeWkxSmV4OTlYdnllUEtkX0tlM3h2S2ZnMFRiU2NjOGlKa1Fnenc0RzI3STM4ZFY5SGhRWHpwd2RNeWd3OHh5bnRJMzlwMnVmTlV3MEQ1aEJuZ1hkU21jQmdSZjdsd3d0a2QxWVlpeTlBQkstU1IxZUk1MUN2czBMdE15c21nYVVVYXg0cFJKdUc1Q1RZWkladVU5b0pZd0FWanpJbGF4SVR1b0xzZHEtWUFhb1cyeVlqaERwUngwLW94MmpSY0Naa0lSdGJuVHhCWVFvUTNQRi1kWm5VQzEyWDhfZVZqN3N2ZnhLazJqSEMzQnhwNjA5Y2c?oc=5",
+      "news_source": "sinotrade.com.tw"
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "market": "TWSE",
+      "close": 7475,
+      "change": -75,
+      "reason": "台股創高期間股價創7550元天價，展現強勢基本面",
+      "catalyst": "昨日台股大漲1276點，川湖創7550元天價",
+      "risk": "科技股估值調整時期，高位股票易成獲利了結對象",
+      "sentiment": "利多",
+      "news_title": "台股狂飆1276點站穩47K！川湖創7550元天價 台積電漲100元收2510元 - 鏡報",
+      "news_link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4ZjBFTlJjQ3BFQm9YeDlDUU1OOXVfMUtFVnp4VDZZNzRnZmpDUHY2U0ZTWl92YzdTYnNSNTRCaXdOaEdNSG5wdno4WDJsQ0RzSTdQMDVMQW0?oc=5",
+      "news_source": "鏡報"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "market": "TWSE",
+      "close": 22.3,
+      "change": 0.5,
+      "reason": "三大法人23日買超，顯示機構投資人看好後市",
+      "catalyst": "三大法人買超股名單中出現，機構資金進場",
+      "risk": "大盤波動劇烈，航空股易受景氣循環影響",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人23日買超股：華航、京元電子、南亞 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYzlqc2RfRlB4QzcyR0MtY3hrVHYxeGkwWGpIRDlaUzYtdHZ1eU52czZ1dVhJMnBzd2w2MWQwV01ESmxxQXBhV200Uk9mTkZGUGc1NjRsakkxRmljYndlVWdNZ2xpUldzWHp0aGc1bXotNGpGbTBkVXFxRkJrTmU4bXV5RkFzeFZR?oc=5",
+      "news_source": "富聯網"
+    }
+  ]
+}
