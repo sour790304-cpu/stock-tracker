@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-25",
+  "generated_at": "2026-06-25T01:32:09.749Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "1326",
+      "name": "台化",
+      "market": "TWSE",
+      "close": 57.7,
+      "change": 0,
+      "reason": "逆市漲停並順利填息，三大題材護體表現強勢",
+      "catalyst": "電子股殺聲震天時台化秒填息、飆逾5%且收漲停",
+      "risk": "大盤持續震盪可能拖累後續表現",
+      "sentiment": "利多",
+      "news_title": "電子股殺聲震天它們卻漲停！台塑四寶逆襲吸金 台化秒填息、台塑化飆逾5％ - Yahoo股市",
+      "news_link": "https://news.google.com/rss/articles/CBMiyANBVV95cUxNUU5ydGxPTzRRMjVydnNYZ0xSRmRhYnJ2MXV0OEcza2RKZWdHVS1hR2tDcmVESjNibnRTTTZia2d3dzl5b21Tb05jcE1aNmFiU3VrVW9tTDZtbnpCM2VFcUJRaTVYbUpOMWtsMnlLSmYwZXU5cDlEbWtBYXgwYlo1RTEtLXRzblZlV1lHTlhfTWJIRHJPZGMtWFRCd1NGaDlCY3BDeS1DbWVTOUYyZ3NsNGRkejk4RkNhTDBGUUMtZWVuZzN2dlJvejNlbmh6cWJsZUV1V2NmLVBjVm9uZmxDMnppcG51NnFIS0FQS25SMnd5X1lPQi1lLVJ1WkJOLU5vOVBSdTZTYkktTVZoQTMzdHF4ajNhVTd4M2VMRDNYU2Fzbzl5cGliME4wdmJNNW1QQ2ItVU9IV1ZxdFM4NFJqcF9lM2pzZmZ4WmVSVTlWcWxBSDEycGRPTVRYVEtaWUc3Z1FkMDI2dld3SW9NSEtXV0ZrUmpNUVI4ckU4VmhsVVF5QkNQNFFsYU9fQjlpd01JRExRMjJQdGU5akh2U0pyaGptWl9JdEpuQXNVVl84NU5uSFhuRjVrRHZNVDYtamVwTVJ4UWZvTW8?oc=5",
+      "news_source": "Yahoo股市"
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "market": "TWSE",
+      "close": 44,
+      "change": 1.05,
+      "reason": "暑假旺季題材浮現，法人持續看好並獲連買加持",
+      "catalyst": "三大法人24日買超長榮航，暑假旺季起飛受市場矚目",
+      "risk": "油價波動與匯率變動影響營運成本",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人24日買超股：力積電、華航、長榮航 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTDZzZDUwWC1ZemxmbGtpZG9jZFRNQl9vdzZ1SEVIbk0xeUhIVTIwQ1M5c0R4Q3pSLURVeW1mLVoxVFFpMEd0a1RremVqWVhaMUotMVVRdGFrd1M2VHpNYkZ0NThRa2pzOUoydXlraFhnT3h5OWQ3QUdSYWxOaHkwdG84dXY4UHE4?oc=5",
+      "news_source": "富聯網"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "market": "TWSE",
+      "close": 23.25,
+      "change": 0.95,
+      "reason": "航空股全面逆風收漲，法人買超支持",
+      "catalyst": "三大法人24日買超華航，航空股逆勢全面收漲",
+      "risk": "大盤震盪風險及油價波動不確定性",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人24日買超股：力積電、華航、長榮航 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTDZzZDUwWC1ZemxmbGtpZG9jZFRNQl9vdzZ1SEVIbk0xeUhIVTIwQ1M5c0R4Q3pSLURVeW1mLVoxVFFpMEd0a1RremVqWVhaMUotMVVRdGFrd1M2VHpNYkZ0NThRa2pzOUoydXlraFhnT3h5OWQ3QUdSYWxOaHkwdG84dXY4UHE4?oc=5",
+      "news_source": "富聯網"
+    }
+  ]
+}
