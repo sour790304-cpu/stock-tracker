@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-06-30",
+  "generated_at": "2026-06-30T01:30:28.624Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "5434",
+      "name": "崇越",
+      "market": "TWSE",
+      "close": 539,
+      "change": 49,
+      "reason": "半導體材料需求升溫，股價強勢攻漲停",
+      "catalyst": "半導體材料需求升溫攻漲停",
+      "risk": "半導體產業波動風險",
+      "sentiment": "利多",
+      "news_title": "半導體材料需求升溫！崇越(5434)攻上漲停！-CMoney官方 - CMoney投資網誌",
+      "news_link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5MY01FVjJ2RTNFSnFqSnhHejdUR0Zyc1NMdGUtRW4yU240Vm5qX2RGaDE2R2VOMHB4YllNc19RbEhadkR6eHlOdUdGUE5jLWhMbjJVTTNDTUhxdHJodEEtNEU1UXlLYWRZdXlreFljOF9PS0ZqWFFJWWVsRjIyQQ?oc=5",
+      "news_source": "CMoney投資網誌"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "market": "TWSE",
+      "close": 30.6,
+      "change": 2.65,
+      "reason": "面板反彈領軍，三大法人進貨補血，獲得大量買盤支持",
+      "catalyst": "三大法人進貨20.4萬張，獲補血54.7億元飆漲9.48%",
+      "risk": "面板產業景氣循環波動",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人29日買超股：友達、彩晶、台新新光金 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQT0F1SVZBUl9DOVEwc21GMjlJUHRrTlRqSEQzNjdxUEhzc2syNU1NcG9MZUoyZGdPTU9vbEM1aXZnQVJYRkhIeFpnMHZBZUVJRFVUOXBmdTFrZ29BZkh4RE1TaFdJQU5UMUd4clI4bXIxanMzWDRTZGQ3NWFrZ3dLc0V5dmJubW5s?oc=5",
+      "news_source": "富聯網"
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "market": "TWSE",
+      "close": 19.25,
+      "change": 1,
+      "reason": "面板反彈，三大法人買超個股之一",
+      "catalyst": "三大法人29日買超彩晶",
+      "risk": "面板供需仍需觀察",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人29日買超股：友達、彩晶、台新新光金 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQT0F1SVZBUl9DOVEwc21GMjlJUHRrTlRqSEQzNjdxUEhzc2syNU1NcG9MZUoyZGdPTU9vbEM1aXZnQVJYRkhIeFpnMHZBZUVJRFVUOXBmdTFrZ29BZkh4RE1TaFdJQU5UMUd4clI4bXIxanMzWDRTZGQ3NWFrZ3dLc0V5dmJubW5s?oc=5",
+      "news_source": "富聯網"
+    }
+  ]
+}
