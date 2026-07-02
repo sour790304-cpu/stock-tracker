@@ -1,0 +1,52 @@
+{
+  "for_date": "2026-07-02",
+  "generated_at": "2026-07-02T01:32:24.511Z",
+  "model": "claude-haiku-4-5-20251001",
+  "source": "Google News RSS + Claude",
+  "news_count": 50,
+  "disclaimer": "本清單由新聞 + AI 自動產生，僅供研究參考，非投資建議。利多可能已反映或為不實消息，開盤前請自行複核。",
+  "picks": [
+    {
+      "code": "2363",
+      "name": "矽統",
+      "market": "TWSE",
+      "close": 73.5,
+      "change": 4.5,
+      "reason": "成熟製程需求旺盛至2027年，爆量成為法人買超王",
+      "catalyst": "成熟製程大廠地位確立，庫藏股助攻股價飆逾37%",
+      "risk": "成熟製程市場競爭激烈，價格下行風險",
+      "sentiment": "利多",
+      "news_title": "成熟製程旺到2027年！這「成熟製程大廠」爆量奪法人買超王 矽統庫藏股助攻飆逾37％ - FTNN 新聞網",
+      "news_link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBoOTZOSDhBUXB0UGtQRDFwWTVSMVNaQkNFR0Z3cF9IckM2OXlhVHduZWNPUDBzZENydHBEU2x0ak9Td3JZSmZQSDJycw?oc=5",
+      "news_source": "FTNN 新聞網"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "market": "TWSE",
+      "close": 169,
+      "change": 4.5,
+      "reason": "三大法人買超，成熟製程需求強勁",
+      "catalyst": "成熟製程旺到2027年利多推升，獲法人關注",
+      "risk": "美系晶片股回檔影響整體半導體信心",
+      "sentiment": "利多",
+      "news_title": "《台北股市》三大法人01日買超股：聯電、南茂、矽統 - 富聯網",
+      "news_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd0tNVEl4b1hvV0dmNGFhb21qYTdHT0FqUGNCMl8tYW9UWDVWM1FScENrSFpfaVlwUFNMSUNQZGhCRTdycmQ5X1pYUUNtUHdVTVltX2J6WWtCWThQbG84VjZadmJlVmIzZnVRdFZFRDV0LWVBQW9xb1QwemdKT1BHMDV0RnJIM2Zr?oc=5",
+      "news_source": "富聯網"
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "market": "TWSE",
+      "close": 1040,
+      "change": -30,
+      "reason": "ABF載板營收創高，外資喊買目標價上調",
+      "catalyst": "美光財報利多帶動ABF需求，被列為營收創高模範生",
+      "risk": "大客戶下單波動風險，下游需求不確定性",
+      "sentiment": "利多",
+      "news_title": "7／2盤前｜漲價潮一波波！ABF後市有多好？外資喊買三雄南電、欣興、景碩目標價一次看- 證券 - 工商時報",
+      "news_link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzOVp3dzNOc2pTclNjV1czblEwUVNOdmVPOU5vbWlicUFwOG9OQTViMmdBS0ZVWEJ0Q2FvdFdrZi1naVNubXFUOHdqS2NmRWRIZnlLX0MzZ1hhalZfUHRz?oc=5",
+      "news_source": "工商時報"
+    }
+  ]
+}
